@@ -32,7 +32,7 @@
   --yellow-2:#ffd65c;
   --orange:#ff8a1f;      /* form hover/focus accent */
   --radius:14px;
-  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
   --gutter:20px;
 }
 *{box-sizing:border-box}
@@ -52,8 +52,8 @@ p{margin:0}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
 .brand{display:flex;flex-direction:column;justify-content:center;min-height:44px;text-decoration:none;line-height:1}
 .brand b{font-size:21px;font-weight:900;letter-spacing:-.01em;text-transform:uppercase}
-.brand span{font-size:10px;font-weight:700;letter-spacing:.1em;white-space:nowrap;text-transform:uppercase;color:var(--on-blue-2);margin-top:4px}
-.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font-weight:800;font-size:16px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.brand span{font-size:11px;font-weight:700;letter-spacing:.06em;white-space:nowrap;text-transform:uppercase;color:var(--on-blue-2);margin-top:4px}
+.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font-weight:800;font-size:17px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
 .tel svg{width:18px;height:18px;flex:none;color:var(--yellow)}
 .tel:hover{color:var(--yellow)}
 
@@ -68,7 +68,7 @@ p{margin:0}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:var(--radius);font:inherit;font-size:17px;font-weight:800;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background .18s,color .18s,border-color .18s,transform .12s}
 .btn:active{transform:translateY(1px)}
 .btn svg{width:20px;height:20px;flex:none}
-.btn-primary{background:var(--yellow);color:var(--blue-ink);border-color:var(--yellow);box-shadow:0 6px 18px -8px rgba(8,22,44,.55)}
+.btn-primary{background:var(--yellow);color:var(--blue-ink);border-color:var(--yellow)}
 .btn-primary:hover{background:var(--yellow-2);border-color:var(--yellow-2)}
 .btn-ghost{background:transparent;color:var(--on-blue);border-color:rgba(244,247,251,.7)}
 .btn-ghost:hover{border-color:var(--yellow);color:var(--yellow)}
@@ -89,7 +89,7 @@ section{padding:64px 0}
 .claims li{display:flex;align-items:center;gap:16px;padding:14px 0;font-weight:800;font-size:clamp(19px,5.4vw,24px);text-transform:uppercase;letter-spacing:-.01em;line-height:1.1}
 .claims li+li{border-top:1px solid var(--zinc-2)}
 .claims svg{width:40px;height:40px;flex:none;color:var(--blue)}
-.fb{margin-top:32px;display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 20px;border-radius:var(--radius);background:var(--paper);border:2px solid var(--blue);color:var(--blue-ink);text-decoration:none;font-weight:800;font-size:18px;max-width:420px;box-shadow:0 10px 24px -16px rgba(15,37,67,.5);transition:background .18s,color .18s}
+.fb{margin-top:32px;display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 20px;border-radius:var(--radius);background:var(--paper);border:2px solid var(--blue);color:var(--blue-ink);text-decoration:none;font-weight:800;font-size:20px;max-width:420px;box-shadow:0 10px 24px -16px rgba(15,37,67,.5);transition:background .18s,color .18s}
 .fb svg{width:28px;height:28px;flex:none;color:var(--blue);transition:color .18s}
 .fb .go{margin-left:auto;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--zinc-2);transition:background .18s}
 .fb .go svg{width:18px;height:18px;color:var(--blue-ink)}
@@ -114,7 +114,7 @@ section{padding:64px 0}
 .ask{background:var(--blue);color:var(--on-blue)}
 .ask .lede{color:var(--on-blue-2)}
 form{margin-top:28px;display:grid;gap:20px;max-width:560px}
-.field label,.field legend{display:block;font-weight:800;font-size:16px;margin-bottom:8px;padding:0}
+.field label,.field legend{display:block;font-weight:800;font-size:17px;margin-bottom:8px;padding:0}
 .field small{font-weight:600;color:var(--on-blue-2)}
 fieldset{border:0;margin:0;padding:0;min-width:0}
 input[type=text],input[type=tel],textarea{width:100%;font:inherit;font-size:17px;color:var(--blue-ink);background:var(--paper);border:2px solid transparent;border-radius:12px;padding:14px 16px;min-height:54px;transition:border-color .15s,box-shadow .15s}
@@ -129,12 +129,12 @@ input[type=text]:focus,input[type=tel]:focus,textarea:focus{outline:2px solid va
 .chips input:focus-visible+label{border-color:var(--orange);outline:2px solid var(--orange);outline-offset:2px}
 .chips input:checked+label{background:var(--on-blue);color:var(--blue-ink);border-color:var(--on-blue)}
 .chips input:checked+label:hover{border-color:var(--orange)}
-.err{display:none;margin-top:8px;font-weight:700;font-size:15px;color:var(--yellow-2)}
+.err{display:none;margin-top:8px;font-weight:700;font-size:17px;color:var(--yellow-2)}
 .field.bad .err{display:block}
 .field.bad input,.field.bad textarea{border-color:var(--yellow)}
 form .btn-primary{width:100%}
 form .btn-primary:hover,form .btn-primary:focus-visible{outline:2px solid var(--orange);outline-offset:2px;border-color:var(--orange)}
-.after{font-size:15px;color:var(--on-blue-2)}
+.after{font-size:17px;color:var(--on-blue-2)}
 .after a{display:inline-block;padding:13px 0;margin:-13px 0;font-weight:800;color:var(--on-blue);white-space:nowrap}
 .after a:hover{color:var(--yellow)}
 
@@ -148,9 +148,9 @@ form .btn-primary:hover,form .btn-primary:focus-visible{outline:2px solid var(--
 .area{margin-top:22px;color:var(--steel);max-width:40ch}
 
 /* ---------- Footer ---------- */
-footer{background:var(--blue-deep);color:var(--on-blue-2);padding:36px 0 calc(40px + env(safe-area-inset-bottom));font-size:15px}
+footer{background:var(--blue-deep);color:var(--on-blue-2);padding:36px 0 calc(40px + env(safe-area-inset-bottom));font-size:17px}
 footer .wrap{display:grid;gap:14px}
-footer b{color:var(--on-blue);font-size:17px;text-transform:uppercase;font-weight:900}
+footer b{color:var(--on-blue);font-size:20px;text-transform:uppercase;font-weight:900}
 footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
 footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-blue);font-weight:700;text-decoration:none}
 footer a:hover{color:var(--yellow)}
@@ -160,7 +160,7 @@ footer a:hover{color:var(--yellow)}
   :root{--gutter:40px}
   .top .wrap{min-height:76px}
   .brand b{font-size:24px}
-  .tel{font-size:19px}
+  .tel{font-size:20px}
   .hero{min-height:calc(min(100svh,900px) - 76px)}
   .hero-copy{padding-top:56px}
   .promise{max-width:none;white-space:nowrap}

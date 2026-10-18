@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "dark-glow",
+        "value": "#0f2543",
+        "createdAt": "2026-10-18T09:38:18.647Z",
+        "reason": "model triage: the .fb link's offset neutral elevation shadow sits on the light zinc section; detector reads the html blue as the page"
+      }
+    ]
+  }
+}
