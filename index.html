@@ -145,6 +145,7 @@ form .btn-primary:focus-visible{outline:2px solid var(--orange);outline-offset:2
 /* ---------- Footer ---------- */
 footer{background:var(--blue-deep);color:var(--on-blue-2);padding:36px 0 calc(40px + env(safe-area-inset-bottom));font-size:16px}
 footer .wrap{display:grid;gap:14px}
+.nw{white-space:nowrap;font-variant-numeric:tabular-nums}
 footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
 footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-blue);font-weight:700;text-decoration:none}
 
@@ -307,7 +308,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <footer>
   <div class="wrap">
-    <span>DPG Home Improvement Inc · Yuri Yampolsky · River Edge, NJ · (201) 342-8837</span>
+    <span>DPG Home Improvement Inc · Yuri Yampolsky · River Edge, NJ · <span class="nw">(201) 342-8837</span></span>
     <nav aria-label="Contact">
       <a href="https://facebook.com/profile.php?id=100000069853653" rel="noopener">Facebook</a>
     </nav>
