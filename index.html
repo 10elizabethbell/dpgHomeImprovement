@@ -60,7 +60,7 @@ p{margin:0}
 /* ---------- Hero ---------- */
 .hero{padding:0;position:relative;background:var(--blue);color:var(--on-blue);display:flex;flex-direction:column;min-height:calc(min(100svh,860px) - 64px);overflow:hidden}
 .hero-copy{width:100%;position:relative;z-index:1;padding-top:22px;padding-bottom:6px}
-.hero h1{font-size:clamp(46px,14.6vw,104px);line-height:.9;letter-spacing:-.035em}
+.hero h1{font-size:clamp(46px,14.6vw,96px);line-height:.9;letter-spacing:-.035em}
 .hero h1 em{font-style:normal;color:var(--yellow);display:block}
 .promise{margin-top:16px;font-size:clamp(17px,4.7vw,20px);line-height:1.4;color:var(--on-blue-2);max-width:30ch}
 .promise b{color:var(--on-blue);font-weight:700}
@@ -87,7 +87,9 @@ section{padding:64px 0}
 .claims li{display:flex;align-items:center;gap:16px;padding:14px 0;font-weight:800;font-size:clamp(19px,5.4vw,24px);text-transform:uppercase;letter-spacing:-.01em;line-height:1.1}
 .claims li+li{border-top:1px solid var(--zinc-2)}
 .claims svg{width:40px;height:40px;flex:none;color:var(--blue)}
-.fb{margin-top:32px;display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 20px;border-radius:var(--radius);background:var(--paper);border:2px solid var(--blue);color:var(--blue-ink);text-decoration:none;font-weight:800;font-size:clamp(17px,5vw,20px);max-width:420px;transition:background .18s,color .18s}
+.fb{margin-top:32px;display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 20px;border-radius:var(--radius);background:var(--paper);border:2px solid var(--blue);color:var(--blue-ink);text-decoration:none;font-weight:800;font-size:clamp(17px,5vw,20px);max-width:420px;transition:none}
+.fb:focus-visible{outline:none}
+.fb:focus-visible .go{background:var(--yellow);outline:3px solid var(--blue);outline-offset:3px}
 .fb svg{width:28px;height:28px;flex:none;color:var(--blue);transition:color .18s}
 .fb .go{margin-left:auto;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--zinc-2);transition:background .18s}
 .fb .go svg{width:18px;height:18px;color:var(--blue-ink)}
@@ -130,7 +132,6 @@ form .btn-primary:focus-visible{outline:2px solid var(--orange);outline-offset:2
 .after a{font-variant-numeric:tabular-nums;display:inline-block;padding:13px 0;margin:-13px 0;font-weight:800;color:var(--on-blue);white-space:nowrap}
 .sent{font-weight:700;color:var(--on-blue)}
 .sent a{font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}
-footer .ftel{display:inline-flex;align-items:center;min-height:44px;color:var(--on-blue);font-weight:700;font-variant-numeric:tabular-nums}
 @media (max-width:380px){.chips label{padding:0 13px}}
 
 /* ---------- Close ---------- */
@@ -181,8 +182,6 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-b
 .tel:hover{color:var(--yellow)}
 .btn-primary:hover{background:var(--yellow-2);border-color:var(--yellow-2)}
 .btn-ghost:hover{border-color:var(--yellow);color:var(--yellow)}
-.fb:hover{background:var(--blue);color:var(--on-blue)}
-.fb:hover>svg{color:var(--yellow)}
 .fb:hover .go{background:var(--yellow)}
 input[type=text]:hover,input[type=tel]:hover,textarea:hover{border-color:var(--orange)}
 .chips label:hover{border-color:var(--orange)}
@@ -254,7 +253,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   </div>
 </section>
 
-<div class="band flip" data-tray="band" aria-hidden="true"><canvas></canvas></div>
+<div class="band flip" data-tray="band" data-fill="#1c4d8c" aria-hidden="true"><canvas></canvas></div>
 
 <section class="ask" id="ask" aria-labelledby="h-ask">
   <div class="wrap">
@@ -287,12 +286,12 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </fieldset>
       <button class="btn btn-primary" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>Text this to Yuri</button>
       <p class="sent" id="sent" role="status" hidden>Didn't open your messages? Call me at <a href="tel:+12013428837">(201) 342-8837</a>.</p>
-      <p class="after">Opens your messages with this written out. Rather talk? Call <a href="tel:+12013428837">(201) 342-8837</a>.</p>
+      <p class="after">Opens your messages with this written out.</p>
     </form>
   </div>
 </section>
 
-<div class="band flip" data-tray="band" aria-hidden="true"><canvas></canvas></div>
+<div class="band" data-tray="band" data-fill="#eef2f6" aria-hidden="true"><canvas></canvas></div>
 
 <section class="close" aria-labelledby="h-close">
   <div class="wrap">
@@ -308,9 +307,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <footer>
   <div class="wrap">
-    <span>DPG Home Improvement Inc · Yuri Yampolsky · River Edge, NJ</span>
+    <span>DPG Home Improvement Inc · Yuri Yampolsky · River Edge, NJ · (201) 342-8837</span>
     <nav aria-label="Contact">
-      <span class="ftel">(201) 342-8837</span>
       <a href="https://facebook.com/profile.php?id=100000069853653" rel="noopener">Facebook</a>
     </nav>
   </div>
@@ -320,7 +318,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 /* ===== Parts tray: one shared loop for every pile on the page ===== */
 (function(){
   /* --- tunables --- */
-  var SWAY = 2.4;          // px, ambient rise and fall of the pile surface
+  var SWAY = 3.4;          // px, ambient rise and fall of the pile surface
   var SWAY_SPEED = 1.0;    // multiplier on the ambient waves
   var TILT = 0.14;         // rad, ambient rocking of each part
   var DROP_EVERY = 1.5;    // s between parts dropping into the hero pile
@@ -378,7 +376,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       body.moveTo(hx,-hh/2);body.lineTo(hx+head*.35,-hh/2);body.lineTo(hx+head,-d/2);
       body.lineTo(L/2-L*.2,-d/2);body.lineTo(L/2,0);body.lineTo(L/2-L*.2,d/2);
       body.lineTo(hx+head,d/2);body.lineTo(hx+head*.35,hh/2);body.lineTo(hx,hh/2);body.closePath();
-      ctx.fillStyle=lin(ctx,0,-hh/2,0,hh/2,[c[0],c[1],c[2],c[3]],[.05,.32,.75,1]);ctx.fill(body);
+      ctx.fillStyle=lin(ctx,0,-hh/2,0,hh/2,[c[1],'#ffffff',c[1],c[2],c[3]],[0,.3,.46,.78,1]);ctx.fill(body);
       ctx.shadowColor='transparent';
       ctx.fillStyle=c[3];ctx.globalAlpha=.55;
       var step=L*.075;
@@ -390,7 +388,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       ctx.fillStyle=c[3];ctx.fillRect(hx-0.5,-hh*.09,head*.5,hh*.18); // slot
     }else{ // bolt
       var Lb=s,bx=-Lb/2,hl=Lb*.17,hb=Lb*.36,db=Lb*.19;
-      ctx.fillStyle=lin(ctx,0,-hb/2,0,hb/2,c,[.05,.35,.8,1]);
+      ctx.fillStyle=lin(ctx,0,-hb/2,0,hb/2,[c[1],'#ffffff',c[1],c[2],c[3]],[0,.3,.46,.8,1]);
       ctx.beginPath();ctx.roundRect?ctx.roundRect(bx,-hb/2,hl,hb,2):ctx.rect(bx,-hb/2,hl,hb);ctx.fill();
       ctx.beginPath();ctx.rect(bx+hl-1,-db/2,Lb-hl,db);ctx.fill();
       ctx.shadowColor='transparent';
@@ -417,6 +415,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     cx.setTransform(1,0,0,1,0,0);cx.globalCompositeOperation='source-atop';
     var lg=cx.createLinearGradient(0,0,cv.width,cv.height);lg.addColorStop(0,'rgba(255,255,255,.22)');lg.addColorStop(.5,'rgba(255,255,255,0)');lg.addColorStop(1,'rgba(10,24,46,.28)');
     cx.fillStyle=lg;cx.fillRect(0,0,cv.width,cv.height);
+    var hc=cv.width/2-s*.18*dpr,hr=s*.34*dpr,sg=cx.createRadialGradient(hc,hc,0,hc,hc,hr);
+    sg.addColorStop(0,'rgba(255,255,255,'+(k[1]==='black'?.28:.5)+')');sg.addColorStop(1,'rgba(255,255,255,0)');
+    cx.fillStyle=sg;cx.fillRect(0,0,cv.width,cv.height); // a soft specular spot, same side on every part
     if(shade>0){cx.setTransform(1,0,0,1,0,0);cx.globalCompositeOperation='source-atop';cx.fillStyle='rgba(10,24,46,'+(shade*.22)+')';cx.fillRect(0,0,cv.width,cv.height)}
     return sprites[key]={cv:cv,dim:dim};
   }
@@ -438,7 +439,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   /* --- trays --- */
   function Tray(el){
     this.el=el;this.cv=el.querySelector('canvas');this.ctx=this.cv.getContext('2d');
-    this.hero=el.dataset.tray==='hero';this.visible=true;this.w=0;this.h=0;this.drop=0;this.parts=[];
+    this.hero=el.dataset.tray==='hero';this.fill=el.dataset.fill;this.seed=7+31*(Tray.n=(Tray.n||0)+1);this.visible=true;this.w=0;this.h=0;this.drop=0;this.parts=[];
     el.classList.add('live');
   }
   Tray.prototype.size=function(){
@@ -447,15 +448,16 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     this.w=w;this.h=h;this.cv.width=Math.round(w*dpr);this.cv.height=Math.round(h*dpr);this.build();return true;
   };
   Tray.prototype.top=function(x){ // pile surface height at x
-    var h=this.h,base=this.hero?h*(phone?.56:.62):h*.42,amp=this.hero?h*.12:h*.14;
+    var h=this.h,base=this.hero?h*(phone?.70:.75):h*.42,amp=this.hero?h*.12:h*.14;
     return h-base-amp*(Math.sin(x*.0065+1.3)*.6+Math.sin(x*.019+.4)*.4);
   };
   Tray.prototype.build=function(){
-    var R=rand(this.hero?7:13+this.w),w=this.w,h=this.h,unit=phone?20:26,parts=[];
+    var R=rand(this.seed),w=this.w,h=this.h,unit=phone?20:26,parts=[];
     var area=0;for(var x=0;x<w;x+=10)area+=(h-this.top(x))*10;
+    if(this.fill){area=0;for(x=0;x<w;x+=10)area+=unit*2.2*10} // bands: a single layer of parts riding the seam
     var n=Math.min(phone?760:1900,Math.round(area/(unit*unit*.36)));
     for(var i=0;i<n;i++){
-      var x0=R()*(w+unit)-unit/2,t=this.top(x0),y0=t+Math.pow(R(),1.25)*(h-t+unit*.6)+unit*.15;
+      var x0=R()*(w+unit)-unit/2,t=this.top(x0),y0=t+Math.pow(R(),1.25)*(this.fill?unit*2:h-t+unit*.6)+unit*.15;
       var ki=pickKind(R()),k=KINDS[ki],s=Math.round(unit*k[2]*[.88,1,1.12][(R()*3)|0]),r0=R()*Math.PI*2,rb=Math.round(r0/ROT_STEP)%8;
       var depth=(y0-t)/Math.max(1,h-t);
       var shade=depth<.18?0:depth<.5?1:2;
@@ -511,7 +513,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     // the pile's body below the loose top layer, so the tray never shows through
     var u=phone?20:26,ub=this.under;c.setTransform(dpr,0,0,dpr,0,0);
     if(!ub){ub=this.under=new Path2D();ub.moveTo(0,this.h);for(var ux=0;ux<=this.w+10;ux+=10)ub.lineTo(ux,this.top(ux)+u*1.6);ub.lineTo(this.w,this.h);ub.closePath();
-      var g=c.createLinearGradient(0,this.h*.4,0,this.h);g.addColorStop(0,'#4a5665');g.addColorStop(1,'#232b36');this.underFill=g}
+      var g=c.createLinearGradient(0,this.h*.4,0,this.h);g.addColorStop(0,'#4a5665');g.addColorStop(1,'#232b36');
+      this.underFill=this.fill||g} // bands fill down into the next section's colour, following the pile's surface
     c.fillStyle=this.underFill;c.fill(ub);
     // two passes: the settled pile, then anything in the air on top of it
     for(var pass=0;pass<2;pass++)for(var i=0;i<parts.length;i++){var p=parts[i];if(p.free!==(pass===1))continue;

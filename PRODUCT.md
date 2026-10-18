@@ -15,7 +15,7 @@ Turn a visitor with a broken thing into a phone call (or a text) to Yuri, and sh
 A one-man local handyman, on a first-name basis: "Yuri, your Local Handyman." Same-day repair. "Reliable Handyman with affordable prices." (caption, 2026-10-18)
 
 ## Capabilities and constraints
-- Contact: phone **(201) 342-8837**, the only published channel. Whether it takes texts is unknown, so calling stays primary and texting is offered as a second option.
+- Contact: phone **(201) 342-8837**, the only published channel. Calling is the tap-to-call number in the header's top-right corner (and the closing section); per Ellie's house rule there is no Call button in the hero. Texting is the hero's second button and the form's handoff. Whether the number takes texts is unknown (flagged in HANDOFF.md).
 - No email, no booking link, no hours, no street address, no logo, no work photos, no reviews, no prices.
 - Area: River Edge, NJ. Neighboring towns are not stated by the owner.
 - Services: the flyer gives no itemized list ("Wide Range Of Services"). Don't invent one.
