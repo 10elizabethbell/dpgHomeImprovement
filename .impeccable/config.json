@@ -8,6 +8,54 @@
         "value": "#0f2543",
         "createdAt": "2026-10-18T09:38:18.647Z",
         "reason": "model triage: the .fb link's offset neutral elevation shadow sits on the light zinc section; detector reads the html blue as the page"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "6px",
+        "createdAt": "2026-10-18T10:03:21.907Z",
+        "reason": "model triage: focus-ring corner, browser-surface theming only"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "22px",
+        "createdAt": "2026-10-18T10:03:21.975Z",
+        "reason": "model triage: static pre-JS stand-in for the parts pile, hidden once the canvas paints"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "21px",
+        "createdAt": "2026-10-18T10:03:22.041Z",
+        "reason": "model triage: wordmark lockup (DPG), documenter deliberately left it off the ramp"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "11px",
+        "createdAt": "2026-10-18T10:03:22.108Z",
+        "reason": "model triage: wordmark lockup second line, not a label style (DESIGN.md: not canonized to avoid an eyebrow)"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#ffd0a6",
+        "createdAt": "2026-10-18T10:03:22.179Z",
+        "reason": "model triage: field error text on blue, noted as a literal in DESIGN.md's field error state"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "clamp(34px,9vw,56px)",
+        "createdAt": "2026-10-18T10:03:22.248Z",
+        "reason": "model triage: closing name heading, size set by the finish review's quieter fix"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "clamp(18px,5vw,22px)",
+        "createdAt": "2026-10-18T10:03:22.317Z",
+        "reason": "model triage: closing 'who' line, shipped size"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "22px",
+        "createdAt": "2026-10-18T10:03:22.388Z",
+        "reason": "model triage: desktop step titles, shipped size from the typeset pass"
       }
     ]
   }
