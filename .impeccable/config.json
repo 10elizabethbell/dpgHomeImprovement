@@ -56,6 +56,24 @@
         "value": "22px",
         "createdAt": "2026-10-18T10:03:22.388Z",
         "reason": "model triage: desktop step titles, shipped size from the typeset pass"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "34px",
+        "createdAt": "2026-10-18T10:03:33.597Z",
+        "reason": "model triage: fluid endpoint of the closing heading / who line, shipped sizes"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "56px",
+        "createdAt": "2026-10-18T10:03:33.668Z",
+        "reason": "model triage: fluid endpoint of the closing heading / who line, shipped sizes"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "18px",
+        "createdAt": "2026-10-18T10:03:33.735Z",
+        "reason": "model triage: fluid endpoint of the closing heading / who line, shipped sizes"
       }
     ]
   }
