@@ -5,8 +5,8 @@
 ## What's built
 - One page, `index.html`, single file, phone first. Sections: header (wordmark + tap-to-call number top right), hero, "I treat your home like mine" (three flyer claims + Facebook link), How it works, "Tell me what's broken" form, closing (name, big phone number, area line), footer.
 - World: a hardware-store parts tray. Parts-bin blue grounds, galvanized-zinc light sections, tape-measure yellow for the primary button.
-- Signature: a canvas pile of shaded zinc/brass/black nuts, washers, screws and bolts under the hero buttons, plus two divider bands. It sways, a part drops in about every 1.5s, mouse or finger pushes parts away, and parts pushed up break loose, fall back and bounce. The hero pile takes drags in every direction on phones (`touch-action:none`); the bands keep vertical scroll (`pan-y`). Tunables are at the top of the first `<script>` (`SWAY`, `DROP_EVERY`, `PUSH_R`, `PUSH`, `GRAVITY`, `LOOSE`…).
-- Contact: `tel:+12013428837` (header, form note, close, footer). Hero "Text Yuri" opens SMS with a starter message. The form composes "Hi Yuri, this is <name>. I need help with: … Where: … When: …" into an SMS.
+- Signature: a canvas pile of shaded zinc/brass/black nuts, washers, screws and bolts under the hero buttons, plus two divider bands. The surface sways, a part drops in about every 1.5s (and jostles its neighbours when it lands), mouse or finger pushes parts away, parts pushed up break loose and bounce back, and a tap flips the nearest part into the air. One fixed light, so every highlight and shadow points the same way. The divider bands are one layer of parts riding a wavy seam into the next section's colour. The hero pile takes drags in every direction on phones (`touch-action:none`); the bands keep vertical scroll (`pan-y`). Tunables are at the top of the first `<script>` (`SWAY`, `DROP_EVERY`, `PUSH_R`, `PUSH`, `GRAVITY`, `LOOSE`…).
+- Contact: `tel:+12013428837` in the header (top right) and the closing section; the footer shows the number as plain text so the bottom screen has one tappable copy. If the SMS app doesn't open after the form, a status line offers the call link. Hero "Text Yuri" opens SMS with a starter message. The form composes "Hi Yuri, this is <name>. I need help with: … Where: … When: …" into an SMS.
 - Favicon / home-screen icon: "DPG" in the site's lettering, yellow on blue (no logo exists). `og.png` is a 1200×630 capture of the hero.
 
 ## Assumptions I made
@@ -39,6 +39,11 @@
 - When photos arrive: a work gallery under the claims (photos set into parts-tray bins), Facebook link directly under it ("Click to see more of my work.").
 - Before/after sliders if he has pairs.
 - Splash reward: a small clatter of parts when the form is sent.
+
+## Review trail
+- Impeccable, every mode except `live` (and `onboard`, no first-run flow): critique, audit, harden, optimize, adapt, clarify, polish, distill, quieter, bolder, layout, typeset, colorize, animate, delight, overdrive, extract. Their fixes are applied (focus contrast, form error a11y, hover only on hover devices, desktop layout, metal lighting, physics).
+- Finish reviewer: first verdict `fix` (8 items), all 8 scored resolved on the second pass. The one regression it found (footer number wrapping at 360) is fixed but wasn't re-reviewed.
+- Detector: one finding left standing, `flat-type-hierarchy` (body steps 11/16/20px; display headings 30–96px not counted). I also added one ignore in `.impeccable/config.json` (`dark-glow=#0f2543`) for a shadow that has since been removed, so it can go.
 
 ## Not verified
 - Real-device touch (iPhone Safari, Facebook in-app browser on iOS/Android); tested with simulated touch and mouse sweeps headlessly.

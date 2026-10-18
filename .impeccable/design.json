@@ -1,0 +1,436 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T10:01:21.866277+00:00",
+  "title": "Design System: DPG Home Improvement Inc",
+  "extensions": {
+    "colorMeta": {
+      "parts-bin-blue": {
+        "role": "primary",
+        "displayName": "Parts-Bin Blue",
+        "canonical": "#1c4d8c",
+        "tonalRamp": [
+          "#08172a",
+          "#0e2646",
+          "#143662",
+          "#19457e",
+          "#3e689d",
+          "#7794ba",
+          "#b0c1d7",
+          "#e4eaf1"
+        ]
+      },
+      "parts-bin-blue-deep": {
+        "role": "primary",
+        "displayName": "Parts-Bin Blue Deep",
+        "canonical": "#123766",
+        "tonalRamp": [
+          "#05111f",
+          "#091c33",
+          "#0d2647",
+          "#10325c",
+          "#36557d",
+          "#7187a3",
+          "#acb9c9",
+          "#e3e7ed"
+        ]
+      },
+      "tape-yellow": {
+        "role": "secondary",
+        "displayName": "Tape-Measure Yellow",
+        "canonical": "#ffc629",
+        "tonalRamp": [
+          "#4d3b0c",
+          "#806314",
+          "#b28b1d",
+          "#e6b225",
+          "#ffcf49",
+          "#ffdd7f",
+          "#ffebb4",
+          "#fff8e5"
+        ]
+      },
+      "tape-yellow-light": {
+        "role": "secondary",
+        "displayName": "Tape-Measure Yellow Light",
+        "canonical": "#ffd65c",
+        "tonalRamp": [
+          "#4d401c",
+          "#806b2e",
+          "#b29640",
+          "#e6c153",
+          "#ffdc74",
+          "#ffe69d",
+          "#fff1c6",
+          "#fffaeb"
+        ]
+      },
+      "form-orange": {
+        "role": "tertiary",
+        "displayName": "Form Orange",
+        "canonical": "#ff8a1f",
+        "tonalRamp": [
+          "#4d2909",
+          "#804510",
+          "#b26116",
+          "#e67c1c",
+          "#ff9c41",
+          "#ffb979",
+          "#ffd6b1",
+          "#fff1e4"
+        ]
+      },
+      "blue-ink": {
+        "role": "neutral",
+        "displayName": "Blue Ink",
+        "canonical": "#0f2543",
+        "tonalRamp": [
+          "#050b14",
+          "#081222",
+          "#0a1a2f",
+          "#0e213c",
+          "#33465f",
+          "#6f7c8e",
+          "#abb3bd",
+          "#e2e5e8"
+        ]
+      },
+      "galvanized-zinc": {
+        "role": "neutral",
+        "displayName": "Galvanized Zinc",
+        "canonical": "#eef2f6",
+        "tonalRamp": [
+          "#47494a",
+          "#77797b",
+          "#a7a9ac",
+          "#d6dadd",
+          "#f1f4f7",
+          "#f5f7fa",
+          "#f9fafc",
+          "#fdfdfe"
+        ]
+      },
+      "zinc-seam": {
+        "role": "neutral",
+        "displayName": "Zinc Seam",
+        "canonical": "#dfe6ee",
+        "tonalRamp": [
+          "#434547",
+          "#707377",
+          "#9ca1a7",
+          "#c9cfd6",
+          "#e4eaf1",
+          "#ecf0f5",
+          "#f4f6f9",
+          "#fbfcfd"
+        ]
+      },
+      "steel": {
+        "role": "neutral",
+        "displayName": "Steel",
+        "canonical": "#5d6b7c",
+        "tonalRamp": [
+          "#1c2025",
+          "#2e363e",
+          "#414b57",
+          "#546070",
+          "#758190",
+          "#9ea6b0",
+          "#c6cbd1",
+          "#ecedef"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#f7f9fb",
+        "tonalRamp": [
+          "#4a4b4b",
+          "#7c7c7e",
+          "#adaeb0",
+          "#dee0e2",
+          "#f8fafc",
+          "#fafbfd",
+          "#fcfdfe",
+          "#fefeff"
+        ]
+      },
+      "on-blue": {
+        "role": "neutral",
+        "displayName": "On-Blue",
+        "canonical": "#f4f7fb",
+        "tonalRamp": [
+          "#494a4b",
+          "#7a7c7e",
+          "#abadb0",
+          "#dcdee2",
+          "#f6f8fc",
+          "#f8fafd",
+          "#fbfcfe",
+          "#fefeff"
+        ]
+      },
+      "on-blue-quiet": {
+        "role": "neutral",
+        "displayName": "On-Blue Quiet",
+        "canonical": "#c9d7ea",
+        "tonalRamp": [
+          "#3c4146",
+          "#646c75",
+          "#8d96a4",
+          "#b5c2d3",
+          "#d1dded",
+          "#dfe7f2",
+          "#ecf1f8",
+          "#f9fafc"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; second phrase on its own line in tape yellow."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings, uppercase; the closing heading and closing phone number run at this weight."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Claim rows (uppercase) and step titles (sentence case)."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Hero promise line and the line under each section heading."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running text and form input text; never below 16px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, form labels, header phone number."
+      }
+    },
+    "shadows": [
+      {
+        "name": "part-drop",
+        "value": "canvas shadowColor rgba(8,20,40,.42); shadowBlur 0.22 x part size; shadowOffsetY 0.1 x part size",
+        "purpose": "Canvas hardware sprites only; falls straight down regardless of rotation. No DOM box-shadows exist."
+      },
+      {
+        "name": "part-light",
+        "value": "linear wash rgba(255,255,255,.22) upper-left to rgba(10,24,46,.28) lower-right, plus radial specular spot (0.5 alpha, 0.28 on black oxide)",
+        "purpose": "The single upper-left light shared by every part."
+      },
+      {
+        "name": "part-buried",
+        "value": "rgba(10,24,46, 0.22 x depth step), steps 0/1/2",
+        "purpose": "Darkens parts lower in the pile."
+      },
+      {
+        "name": "pile-body",
+        "value": "linear-gradient(#4a5665, #232b36)",
+        "purpose": "Hero pile body under the loose top layer; bands use the next section ground instead."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-fast",
+        "value": "0.15s",
+        "purpose": "Form field and chip border/background transitions."
+      },
+      {
+        "name": "state",
+        "value": "0.18s",
+        "purpose": "Button, link and arrow-well color transitions."
+      },
+      {
+        "name": "press",
+        "value": "transform translateY(1px) 0.12s",
+        "purpose": "Button press feedback."
+      },
+      {
+        "name": "tray-sway",
+        "value": "SWAY 3.4px, TILT 0.14rad, SWAY_SPEED 1.0",
+        "purpose": "Ambient motion of the pile surface; only the top layer moves."
+      },
+      {
+        "name": "tray-drop",
+        "value": "DROP_EVERY 1.5s (x0.6-1.4 jitter)",
+        "purpose": "A hero part pops up and lands back periodically."
+      },
+      {
+        "name": "tray-push",
+        "value": "PUSH_R 70px (1.3x desktop), PUSH 1500, CARRY 0.55, SPRING 38, DAMP 9, GRAVITY 1900px/s2, LOOSE 18px",
+        "purpose": "Pointer/finger interaction physics."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Pile drawn once as a still, redrawn on resize only; smooth scroll off."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "max-width 380px"
+      },
+      {
+        "name": "tablet",
+        "value": "760px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      },
+      {
+        "name": "pointer",
+        "value": "(hover: hover)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one yellow action per view.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Tell me what's broken</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:14px;font-family:var(--font,-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif);font-size:16px;font-weight:800;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background .18s,color .18s,border-color .18s,transform .12s}.ds-btn:active{transform:translateY(1px)}.ds-btn:focus-visible{outline:3px solid #ffc629;outline-offset:3px}.ds-btn-primary{background:#ffc629;color:#0f2543;border-color:#ffc629}.ds-btn-primary:hover{background:#ffd65c;border-color:#ffd65c}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary hero action on blue, outlined never filled.",
+      "html": "<div style=\"background:#1c4d8c;padding:20px\"><a class=\"ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\"/></svg>Text Yuri</a></div>",
+      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:14px;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;font-size:16px;font-weight:800;text-decoration:none;background:transparent;color:#f4f7fb;border:2px solid rgba(244,247,251,.7);transition:color .18s,border-color .18s,transform .12s}.ds-btn-ghost:hover{border-color:#ffc629;color:#ffc629}.ds-btn-ghost:active{transform:translateY(1px)}.ds-btn-ghost:focus-visible{outline:3px solid #ffc629;outline-offset:3px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Paper field on blue; orange outline on hover and focus.",
+      "html": "<div style=\"background:#1c4d8c;padding:20px;color:#f4f7fb\"><label class=\"ds-label\" for=\"ds-n\">Your name</label><input class=\"ds-input\" id=\"ds-n\" type=\"text\" placeholder=\"First name is fine\"></div>",
+      "css": ".ds-label{display:block;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;font-weight:800;font-size:16px;margin-bottom:8px}.ds-input{width:100%;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;font-size:16px;color:#0f2543;background:#f7f9fb;border:2px solid transparent;border-radius:12px;padding:14px 16px;min-height:54px;caret-color:#1c4d8c;transition:border-color .15s}.ds-input::placeholder{color:#5d6b7c}.ds-input:hover{border-color:#ff8a1f}.ds-input:focus{outline:2px solid #ff8a1f;outline-offset:2px;border-color:#ff8a1f}"
+    },
+    {
+      "name": "Choice Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Radio choices inside the form only.",
+      "html": "<div style=\"background:#1c4d8c;padding:20px\"><div class=\"ds-chips\"><input type=\"radio\" name=\"ds-w\" id=\"ds-w1\" checked><label for=\"ds-w1\">Today</label><input type=\"radio\" name=\"ds-w\" id=\"ds-w2\"><label for=\"ds-w2\">This week</label><input type=\"radio\" name=\"ds-w\" id=\"ds-w3\"><label for=\"ds-w3\">I'm flexible</label></div></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}.ds-chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:12px;border:2px solid rgba(244,247,251,.55);color:#f4f7fb;font-weight:700;cursor:pointer;transition:border-color .15s,background .15s,color .15s}.ds-chips label:hover{border-color:#ff8a1f}.ds-chips input:checked+label{background:#f4f7fb;color:#0f2543;border-color:#f4f7fb}.ds-chips input:checked+label:hover{border-color:#ff8a1f}.ds-chips input:focus-visible+label{border-color:#ff8a1f;outline:2px solid #ff8a1f;outline-offset:2px}"
+    },
+    {
+      "name": "Link Row with Arrow",
+      "kind": "custom",
+      "refersTo": "link-row",
+      "description": "Tappable row; on hover only the arrow well fills yellow.",
+      "html": "<a class=\"ds-row\" href=\"#\">See me on Facebook<span class=\"ds-go\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a>",
+      "css": ".ds-row{display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 20px;border-radius:14px;background:#f7f9fb;border:2px solid #1c4d8c;color:#0f2543;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;font-weight:800;font-size:18px;max-width:420px}.ds-row:focus-visible{outline:none}.ds-go{margin-left:auto;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#dfe6ee;color:#0f2543;transition:background .18s}.ds-row:hover .ds-go{background:#ffc629}.ds-row:focus-visible .ds-go{background:#ffc629;outline:3px solid #1c4d8c;outline-offset:3px}"
+    },
+    {
+      "name": "Claim List",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Proof as a plain list with hairline seams, not cards.",
+      "html": "<ul class=\"ds-claims\"><li><svg viewBox=\"0 0 40 40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"20\" cy=\"21\" r=\"14\"/><path d=\"M20 13v8l5 4M15 3h10\"/></svg>Same-day repair</li><li><svg viewBox=\"0 0 40 40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 4l13 5v9c0 8.5-5.6 15.3-13 18-7.4-2.7-13-9.5-13-18V9z\"/><path d=\"M14 20l4.5 4.5L27 16\"/></svg>Fully insured and bonded</li></ul>",
+      "css": ".ds-claims{list-style:none;margin:0;padding:0;background:#eef2f6;color:#0f2543;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-claims li{display:flex;align-items:center;gap:16px;padding:14px 0;font-weight:800;font-size:22px;text-transform:uppercase;letter-spacing:-.01em;line-height:1.1}.ds-claims li+li{border-top:1px solid #dfe6ee}.ds-claims svg{width:40px;height:40px;flex:none;color:#1c4d8c}"
+    },
+    {
+      "name": "Numbered Steps",
+      "kind": "custom",
+      "refersTo": "step-marker",
+      "description": "Three static steps with blue circle numerals.",
+      "html": "<ol class=\"ds-steps\"><li><div><b>Text or call me.</b><span>Big job or small, ask me.</span></div></li><li><div><b>I come and fix it.</b><span>At a fair price.</span></div></li></ol>",
+      "css": ".ds-steps{list-style:none;margin:0;padding:0;display:grid;gap:22px;counter-reset:s;color:#0f2543;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}.ds-steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#1c4d8c;color:#f4f7fb;font-weight:900;font-size:20px}.ds-steps b{display:block;font-size:20px;font-weight:800;line-height:1.2;margin-top:2px}.ds-steps span{display:block;color:#5d6b7c;margin-top:4px}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Wordmark left, tap-to-call number top right; no menu.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><b>DPG</b><span>Home Improvement Inc</span></a><a class=\"ds-tel\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z\"/></svg>(201) 342-8837</a></header>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 20px;background:#1c4d8c;color:#f4f7fb;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-brand{display:flex;flex-direction:column;justify-content:center;min-height:44px;color:inherit;text-decoration:none;line-height:1}.ds-brand b{font-size:21px;font-weight:900;letter-spacing:-.01em;text-transform:uppercase}.ds-brand span{font-size:11px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:#c9d7ea;margin-top:4px}.ds-tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:inherit;font-weight:800;font-size:16px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}.ds-tel svg{color:#ffc629}.ds-tel:hover{color:#ffc629}.ds-tel:focus-visible{outline:3px solid #ffc629;outline-offset:3px;border-radius:6px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Parts Tray",
+    "overview": "The site is a hardware-store parts tray: a flat field of parts-bin blue and galvanized zinc, set in heavy uppercase type, with a real pile of zinc, brass and black-oxide nuts, washers, screws and bolts that the visitor can stir. All the depth and material lives in that pile. The page around it stays flat, firm and plain, like the painted bin the parts sit in.\n\nDensity is low and the voice is loud. Each screen carries one claim in very heavy uppercase, one supporting line in a quieter tone, and at most two actions. Tape-measure yellow marks the single thing to do. Proof is a plain list with hairline seams, not a grid of cards. The pile comes back between sections as a thin band riding the seam where blue meets zinc, so the tray holds the whole page together.\n\nThe build rejects the category default (stock-photo hero over a twelve-icon services grid) and any effect that doesn't read as a real object. The parts are drawn as hardware, lit from one side.",
+    "keyCharacteristics": [
+      "Two grounds only: parts-bin blue and galvanized zinc, alternating by section, with deep blue for the footer.",
+      "One yellow action per view; orange appears only inside the form.",
+      "Heavy 900-weight uppercase headings with tight negative tracking, on the house system font stack.",
+      "Flat DOM surfaces. Depth comes only from the canvas parts, lit from the upper left.",
+      "Live parts pile in the hero (drops, pushes, taps) and as seam bands between sections.",
+      "Tap targets 44px minimum, buttons 56px, body never below 16px."
+    ],
+    "rules": [
+      {
+        "name": "The Two Grounds Rule",
+        "body": "Every section sits on parts-bin blue or galvanized zinc; the footer alone is deep blue. Consecutive sections on different grounds are joined by a parts band whose pile fills down into the next section's color, never by a straight hard edge.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Yellow Rule",
+        "body": "Yellow fill belongs to the primary action. Everywhere else yellow is a stroke, glyph, type or hover state, and only one yellow-filled button is visible at a time.",
+        "section": "colors"
+      },
+      {
+        "name": "The Orange Stays In The Form Rule",
+        "body": "Orange is the form's hover/focus/error accent and appears on no other surface. It exists because yellow is already the submit button's fill and can't also be its outline.",
+        "section": "colors"
+      },
+      {
+        "name": "The Heavy Caps Rule",
+        "body": "Headings and claim rows are 800–900 weight, uppercase, with negative tracking and line-height at or below 1.1. Body, ledes, step text, form copy and buttons are never uppercase.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sixteen Floor Rule",
+        "body": "No reading text below 16px, form inputs included (prevents iOS zoom). Hierarchy comes from weight and case, not tiny sizes.",
+        "section": "typography"
+      },
+      {
+        "name": "The Number Top-Right Rule",
+        "body": "On the first screen the phone number appears once, as a tap-to-call link in the header's top-right corner. Under the hero headline there are at most two buttons, and neither is a Call button. The number comes back in the closing section and the footer only. No sticky bottom bar, ever.",
+        "section": "layout"
+      },
+      {
+        "name": "The Clear Zone Rule",
+        "body": "Text never sits over the pile. The hero copy has its own band above the tray, and bands sit between sections, never behind headings.",
+        "section": "layout"
+      },
+      {
+        "name": "The One Light Rule",
+        "body": "Every part on the page is lit from the upper left and casts its shadow downward, whatever its rotation. Sprites are baked at eight fixed turns so the light never rotates with the part.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Flat Bin Rule",
+        "body": "Shadows are for hardware, not for interface. A DOM element that needs emphasis gets a border, a tone shift or yellow, never a shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** alternate parts-bin blue and galvanized zinc grounds, and join them with a parts band that fills into the next ground.",
+      "**Do** keep one yellow-filled action in view; secondary actions on blue are ghost-outlined (2px, 14px corners).",
+      "**Do** outline every form control in form orange on hover and on focus (2px outline, 2px offset), and use orange only there.",
+      "**Do** change only the arrow well on hover for tappable rows with an arrow (zinc-seam to yellow), and put their focus ring on the arrow.",
+      "**Do** put hover styles inside `@media (hover:hover)` so taps don't leave them stuck.",
+      "**Do** set headings at 900 weight, uppercase, tracked -0.02em to -0.035em, line-height 1 or below, on the system font stack.",
+      "**Do** keep tap targets at 44px minimum and buttons at 56px, with text at 16px or larger.",
+      "**Do** light every part from the upper left with its shadow falling down, and give the pile a still frame under reduced motion."
+    ],
+    "donts": [
+      "**Don't** put a box-shadow on any DOM surface or control; depth is tone, border, and the canvas parts.",
+      "**Don't** show the phone number twice on the first screen, put a Call button under the hero headline, or add a sticky bottom bar.",
+      "**Don't** turn proof or claims into cards; they are a plain list with 1px hairlines.",
+      "**Don't** style non-interactive labels or town names as chips or pills; chips are for real form choices only.",
+      "**Don't** let the pile, or any pattern, run behind text.",
+      "**Don't** use pill (fully rounded) buttons; corners are 12–14px.",
+      "**Don't** add effects that don't read as real hardware (sheens, glints, abstract particles)."
+    ]
+  }
+}
