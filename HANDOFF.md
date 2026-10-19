@@ -43,7 +43,7 @@
 ## Review trail
 - Impeccable, every mode except `live` (and `onboard`, no first-run flow): critique, audit, harden, optimize, adapt, clarify, polish, distill, quieter, bolder, layout, typeset, colorize, animate, delight, overdrive, extract. Their fixes are applied (focus contrast, form error a11y, hover only on hover devices, desktop layout, metal lighting, physics).
 - Finish reviewer: first verdict `fix` (8 items), all 8 scored resolved on the second pass. The one regression it found (footer number wrapping at 360) is fixed but wasn't re-reviewed.
-- Detector: one finding left standing, `flat-type-hierarchy` (body steps 11/16/20px; display headings 30–96px not counted). I also added one ignore in `.impeccable/config.json` (`dark-glow=#0f2543`) for a shadow that has since been removed, so it can go.
+- Detector: 0 findings, but only because of ignores in `.impeccable/config.json`. These cover the one-off values DESIGN.md doesn't list: 6px focus corner, 22px placeholder corner, the 21/11px wordmark, #ffd0a6 error text, the closing heading and "who" line sizes (including their 34/56/18px endpoints, which are now allowed site-wide), and the 22px desktop step titles. A cleaner fix is to add those sizes to DESIGN.md's type scale and drop the ignores. `dark-glow=#0f2543` matches nothing anymore and can go.
 
 ## Not verified
 - Real-device touch (iPhone Safari, Facebook in-app browser on iOS/Android); tested with simulated touch and mouse sweeps headlessly.
