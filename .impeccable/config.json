@@ -4,12 +4,6 @@
     "ignoreFiles": [],
     "ignoreValues": [
       {
-        "rule": "dark-glow",
-        "value": "#0f2543",
-        "createdAt": "2026-10-18T09:38:18.647Z",
-        "reason": "model triage: the .fb link's offset neutral elevation shadow sits on the light zinc section; detector reads the html blue as the page"
-      },
-      {
         "rule": "design-system-radius",
         "value": "6px",
         "createdAt": "2026-10-18T10:03:21.907Z",
@@ -41,18 +35,6 @@
       },
       {
         "rule": "design-system-font-size",
-        "value": "clamp(34px,9vw,56px)",
-        "createdAt": "2026-10-18T10:03:22.248Z",
-        "reason": "model triage: closing name heading, size set by the finish review's quieter fix"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "clamp(18px,5vw,22px)",
-        "createdAt": "2026-10-18T10:03:22.317Z",
-        "reason": "model triage: closing 'who' line, shipped size"
-      },
-      {
-        "rule": "design-system-font-size",
         "value": "22px",
         "createdAt": "2026-10-18T10:03:22.388Z",
         "reason": "model triage: desktop step titles, shipped size from the typeset pass"
@@ -61,12 +43,6 @@
         "rule": "design-system-font-size",
         "value": "34px",
         "createdAt": "2026-10-18T10:03:33.597Z",
-        "reason": "model triage: fluid endpoint of the closing heading / who line, shipped sizes"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "56px",
-        "createdAt": "2026-10-18T10:03:33.668Z",
         "reason": "model triage: fluid endpoint of the closing heading / who line, shipped sizes"
       },
       {
