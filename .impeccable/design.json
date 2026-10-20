@@ -332,6 +332,11 @@
         "purpose": "Only elements starting below the first screen; off under reduced motion."
       },
       {
+        "name": "h1-bounce-in",
+        "value": "per letter translateX(50px) + opacity 0 to rest, 1s cubic-bezier(.34,1.56,.64,1), 20ms stagger",
+        "purpose": "Hero H1 only, on load; split in JS; plain heading under reduced motion or without JS."
+      },
+      {
         "name": "float-in",
         "value": "translateY(120px) to 0, 0.35s cubic-bezier(.2,.8,.2,1)",
         "purpose": "Floating text circle show/hide."
@@ -354,7 +359,7 @@
       {
         "name": "reduced-motion",
         "value": "prefers-reduced-motion: reduce",
-        "purpose": "Pile drawn once as a still; fade-up, float and button transitions off; smooth scroll off."
+        "purpose": "Pile drawn once as a still; fade-up, H1 bounce-in, float and button transitions off; smooth scroll off."
       }
     ],
     "breakpoints": [

@@ -359,6 +359,9 @@ A 60px yellow circle with a 26px ink chat glyph, opening a prefilled SMS. It sli
 ### Fade-Up
 The single scroll motion: elements that start below the first screen rise 12px and fade in over 400ms ease-out as they enter. Everything above the fold is visible at rest; reduced motion disables it entirely.
 
+### Hero Headline Bounce-In
+The hero H1 only (after lpmr.co.uk, Ellie's pick): on load, JS splits it into letters inside nowrap word wrappers. Each letter slides in from 50px right and fades from 0 over 1s on `cubic-bezier(.34,1.56,.64,1)` (back-out, a slight overshoot), 20ms apart. The H1 carries an `aria-label` with the full text and the letter spans are `aria-hidden`. When the last letter lands, the plain heading is restored, so kerning and selection come back. No JS or reduced motion: the plain heading shows straight away. Never put it on other headings.
+
 ### Parts Tray (signature)
 A canvas pile of nuts, washers, screws and bolts in zinc (most), brass and black oxide, drawn from seeded random positions along a wavy surface. One shared animation loop runs every tray on the page and pauses trays that are off screen.
 - **Ambient:** only the top layer sways and rocks (3.4px rise, 0.14rad tilt); buried parts sit still. In the hero a surface part pops up and drops back in about every 1.5s.
