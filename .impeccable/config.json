@@ -16,40 +16,16 @@
         "reason": "model triage: static pre-JS stand-in for the parts pile, hidden once the canvas paints"
       },
       {
-        "rule": "design-system-font-size",
-        "value": "21px",
-        "createdAt": "2026-10-18T10:03:22.041Z",
-        "reason": "model triage: wordmark lockup (DPG), documenter deliberately left it off the ramp"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "11px",
-        "createdAt": "2026-10-18T10:03:22.108Z",
-        "reason": "model triage: wordmark lockup second line, not a label style (DESIGN.md: not canonized to avoid an eyebrow)"
+        "rule": "design-system-color",
+        "value": "#5f6c7c",
+        "createdAt": "2026-10-20T00:04:18.044Z",
+        "reason": "model triage: static pre-JS stand-in for the parts pile (same mound as the 22px curve), hidden once the canvas paints"
       },
       {
         "rule": "design-system-color",
-        "value": "#ffd0a6",
-        "createdAt": "2026-10-18T10:03:22.179Z",
-        "reason": "model triage: field error text on blue, noted as a literal in DESIGN.md's field error state"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "22px",
-        "createdAt": "2026-10-18T10:03:22.388Z",
-        "reason": "model triage: desktop step titles, shipped size from the typeset pass"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "34px",
-        "createdAt": "2026-10-18T10:03:33.597Z",
-        "reason": "model triage: fluid endpoint of the closing heading / who line, shipped sizes"
-      },
-      {
-        "rule": "design-system-font-size",
-        "value": "18px",
-        "createdAt": "2026-10-18T10:03:33.735Z",
-        "reason": "model triage: fluid endpoint of the closing heading / who line, shipped sizes"
+        "value": "rgba(140,152,166,.55)",
+        "createdAt": "2026-10-20T00:04:18.044Z",
+        "reason": "model triage: static pre-JS stand-in for the parts pile (same mound as the 22px curve), hidden once the canvas paints"
       }
     ]
   }

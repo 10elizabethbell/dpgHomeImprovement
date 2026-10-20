@@ -1,37 +1,37 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-18T10:01:21.866277+00:00",
+  "generatedAt": "2026-10-20T00:03:10.059284+00:00",
   "title": "Design System: DPG Home Improvement Inc",
   "extensions": {
     "colorMeta": {
-      "parts-bin-blue": {
+      "parts-bin-navy": {
         "role": "primary",
-        "displayName": "Parts-Bin Blue",
+        "displayName": "Parts-Bin Navy",
         "canonical": "#1c4d8c",
         "tonalRamp": [
-          "#08172a",
-          "#0e2646",
-          "#143662",
-          "#19457e",
-          "#3e689d",
-          "#7794ba",
-          "#b0c1d7",
-          "#e4eaf1"
+          "#0a1c33",
+          "#13335e",
+          "#1c4d8c",
+          "#2669bf",
+          "#4c8bdb",
+          "#88b2e7",
+          "#bfd6f2",
+          "#eaf1fb"
         ]
       },
-      "parts-bin-blue-deep": {
+      "deep-blue": {
         "role": "primary",
-        "displayName": "Parts-Bin Blue Deep",
-        "canonical": "#123766",
+        "displayName": "Deep Blue",
+        "canonical": "#0f2543",
         "tonalRamp": [
-          "#05111f",
-          "#091c33",
-          "#0d2647",
-          "#10325c",
-          "#36557d",
-          "#7187a3",
-          "#acb9c9",
-          "#e3e7ed"
+          "#0b1c32",
+          "#15335c",
+          "#1f4c8a",
+          "#2a68bc",
+          "#5089d8",
+          "#8ab1e5",
+          "#c0d5f1",
+          "#eaf1fa"
         ]
       },
       "tape-yellow": {
@@ -39,13 +39,13 @@
         "displayName": "Tape-Measure Yellow",
         "canonical": "#ffc629",
         "tonalRamp": [
-          "#4d3b0c",
-          "#806314",
-          "#b28b1d",
-          "#e6b225",
-          "#ffcf49",
-          "#ffdd7f",
-          "#ffebb4",
+          "#3d2d00",
+          "#705200",
+          "#a87b00",
+          "#e6a800",
+          "#ffc629",
+          "#ffd970",
+          "#ffebb2",
           "#fff8e5"
         ]
       },
@@ -54,168 +54,240 @@
         "displayName": "Tape-Measure Yellow Light",
         "canonical": "#ffd65c",
         "tonalRamp": [
-          "#4d401c",
-          "#806b2e",
-          "#b29640",
-          "#e6c153",
-          "#ffdc74",
-          "#ffe69d",
-          "#fff1c6",
-          "#fffaeb"
+          "#3d2e00",
+          "#705400",
+          "#a87e00",
+          "#e6ac00",
+          "#ffc929",
+          "#ffdb70",
+          "#ffecb2",
+          "#fff9e5"
         ]
       },
-      "form-orange": {
-        "role": "tertiary",
-        "displayName": "Form Orange",
-        "canonical": "#ff8a1f",
+      "tape-yellow-ink": {
+        "role": "secondary",
+        "displayName": "Yellow Ink",
+        "canonical": "#8a5a00",
         "tonalRamp": [
-          "#4d2909",
-          "#804510",
-          "#b26116",
-          "#e67c1c",
-          "#ff9c41",
-          "#ffb979",
-          "#ffd6b1",
-          "#fff1e4"
-        ]
-      },
-      "blue-ink": {
-        "role": "neutral",
-        "displayName": "Blue Ink",
-        "canonical": "#0f2543",
-        "tonalRamp": [
-          "#050b14",
-          "#081222",
-          "#0a1a2f",
-          "#0e213c",
-          "#33465f",
-          "#6f7c8e",
-          "#abb3bd",
-          "#e2e5e8"
-        ]
-      },
-      "galvanized-zinc": {
-        "role": "neutral",
-        "displayName": "Galvanized Zinc",
-        "canonical": "#eef2f6",
-        "tonalRamp": [
-          "#47494a",
-          "#77797b",
-          "#a7a9ac",
-          "#d6dadd",
-          "#f1f4f7",
-          "#f5f7fa",
-          "#f9fafc",
-          "#fdfdfe"
-        ]
-      },
-      "zinc-seam": {
-        "role": "neutral",
-        "displayName": "Zinc Seam",
-        "canonical": "#dfe6ee",
-        "tonalRamp": [
-          "#434547",
-          "#707377",
-          "#9ca1a7",
-          "#c9cfd6",
-          "#e4eaf1",
-          "#ecf0f5",
-          "#f4f6f9",
-          "#fbfcfd"
-        ]
-      },
-      "steel": {
-        "role": "neutral",
-        "displayName": "Steel",
-        "canonical": "#5d6b7c",
-        "tonalRamp": [
-          "#1c2025",
-          "#2e363e",
-          "#414b57",
-          "#546070",
-          "#758190",
-          "#9ea6b0",
-          "#c6cbd1",
-          "#ecedef"
+          "#3d2800",
+          "#704900",
+          "#a86e00",
+          "#e69600",
+          "#ffb429",
+          "#ffcd70",
+          "#ffe4b2",
+          "#fff6e5"
         ]
       },
       "paper": {
         "role": "neutral",
         "displayName": "Paper",
-        "canonical": "#f7f9fb",
+        "canonical": "#f4f6fb",
         "tonalRamp": [
-          "#4a4b4b",
-          "#7c7c7e",
-          "#adaeb0",
-          "#dee0e2",
-          "#f8fafc",
-          "#fafbfd",
-          "#fcfdfe",
-          "#fefeff"
+          "#10182d",
+          "#1e2d52",
+          "#2d437b",
+          "#3d5ca8",
+          "#627ec6",
+          "#96a9d9",
+          "#c7d1eb",
+          "#ecf0f8"
         ]
       },
-      "on-blue": {
+      "card": {
         "role": "neutral",
-        "displayName": "On-Blue",
+        "displayName": "Card White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#1f1f1f",
+          "#383838",
+          "#545454",
+          "#737373",
+          "#949494",
+          "#b8b8b8",
+          "#d9d9d9",
+          "#f2f2f2"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#0f2543",
+        "tonalRamp": [
+          "#0b1c32",
+          "#15335c",
+          "#1f4c8a",
+          "#2a68bc",
+          "#5089d8",
+          "#8ab1e5",
+          "#c0d5f1",
+          "#eaf1fa"
+        ]
+      },
+      "body-text": {
+        "role": "neutral",
+        "displayName": "Body Text",
+        "canonical": "#2a3a4c",
+        "tonalRamp": [
+          "#161e27",
+          "#283748",
+          "#3c536c",
+          "#527194",
+          "#7592b3",
+          "#a3b6cc",
+          "#ced8e4",
+          "#eff2f6"
+        ]
+      },
+      "soft-text": {
+        "role": "neutral",
+        "displayName": "Soft Text",
+        "canonical": "#4a5868",
+        "tonalRamp": [
+          "#191e24",
+          "#2f3742",
+          "#465362",
+          "#5f7186",
+          "#8293a6",
+          "#acb7c4",
+          "#d2d8df",
+          "#f0f2f4"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "On-Dark",
         "canonical": "#f4f7fb",
         "tonalRamp": [
-          "#494a4b",
-          "#7a7c7e",
-          "#abadb0",
-          "#dcdee2",
-          "#f6f8fc",
-          "#f8fafd",
-          "#fbfcfe",
-          "#fefeff"
+          "#101d2d",
+          "#1e3452",
+          "#2d4f7b",
+          "#3d6ba8",
+          "#628dc6",
+          "#96b3d9",
+          "#c7d6eb",
+          "#ecf1f8"
         ]
       },
-      "on-blue-quiet": {
+      "on-dark-soft": {
         "role": "neutral",
-        "displayName": "On-Blue Quiet",
+        "displayName": "On-Dark Soft",
         "canonical": "#c9d7ea",
         "tonalRamp": [
-          "#3c4146",
-          "#646c75",
-          "#8d96a4",
-          "#b5c2d3",
-          "#d1dded",
-          "#dfe7f2",
-          "#ecf1f8",
-          "#f9fafc"
+          "#111d2c",
+          "#1f3451",
+          "#2f4f79",
+          "#406ba5",
+          "#658dc3",
+          "#98b3d7",
+          "#c8d6ea",
+          "#edf1f8"
+        ]
+      },
+      "error-red": {
+        "role": "neutral",
+        "displayName": "Error Red",
+        "canonical": "#b3261e",
+        "tonalRamp": [
+          "#340b09",
+          "#601410",
+          "#901f18",
+          "#c52a21",
+          "#e05048",
+          "#eb8a85",
+          "#f4c0bd",
+          "#fbeae9"
         ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Hero headline only; second phrase on its own line in tape yellow."
+        "purpose": "Hero headline only."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "Section headings, uppercase; the closing heading and closing phone number run at this weight."
+        "purpose": "Section headings."
       },
-      "title": {
-        "displayName": "Title",
-        "purpose": "Claim rows (uppercase) and step titles (sentence case)."
+      "headline-phone": {
+        "displayName": "Headline Phone",
+        "purpose": "Closing tap-to-call number."
       },
-      "lede": {
-        "displayName": "Lede",
-        "purpose": "Hero promise line and the line under each section heading."
+      "title-card": {
+        "displayName": "Title Card",
+        "purpose": "Claim-list labels."
       },
-      "body": {
-        "displayName": "Body",
-        "purpose": "All running text and form input text; never below 16px."
+      "title-step": {
+        "displayName": "Title Step",
+        "purpose": "Step titles on deep blue (phones and tablets)."
+      },
+      "title-step-desktop": {
+        "displayName": "Title Step Desktop",
+        "purpose": "Step titles from 1024px."
+      },
+      "title-row": {
+        "displayName": "Title Row",
+        "purpose": "Facebook link-row label."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Step numerals in yellow circles."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Button labels."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Buttons, form labels, header phone number."
+        "purpose": "Form labels and legends."
+      },
+      "phone-header": {
+        "displayName": "Phone Header",
+        "purpose": "Header phone number, phones."
+      },
+      "phone-header-desktop": {
+        "displayName": "Phone Header Desktop",
+        "purpose": "Header phone number from 760px."
+      },
+      "promise": {
+        "displayName": "Promise",
+        "purpose": "Hero promise line."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Line under section headings."
+      },
+      "who": {
+        "displayName": "Who",
+        "purpose": "Closing 'who' line."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text."
+      },
+      "input": {
+        "displayName": "Input",
+        "purpose": "Field text."
+      },
+      "note": {
+        "displayName": "Note",
+        "purpose": "Note under submit; field errors."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "(optional) marker beside labels."
       }
     },
     "shadows": [
       {
+        "name": "float",
+        "value": "0 10px 28px rgba(8,24,46,.3)",
+        "purpose": "Floating text circle only; the one DOM shadow."
+      },
+      {
         "name": "part-drop",
         "value": "canvas shadowColor rgba(8,20,40,.42); shadowBlur 0.22 x part size; shadowOffsetY 0.1 x part size",
-        "purpose": "Canvas hardware sprites only; falls straight down regardless of rotation. No DOM box-shadows exist."
+        "purpose": "Canvas hardware sprites only; falls straight down regardless of rotation."
       },
       {
         "name": "part-light",
@@ -231,23 +303,38 @@
         "name": "pile-body",
         "value": "linear-gradient(#4a5665, #232b36)",
         "purpose": "Hero pile body under the loose top layer; bands use the next section ground instead."
+      },
+      {
+        "name": "deep-texture",
+        "value": "repeating-linear-gradient(135deg, transparent 0 22px, rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Faint diagonal lines on every deep-blue ground (How it works, footer, deep band, calm hero)."
       }
     ],
     "motion": [
       {
         "name": "state-fast",
         "value": "0.15s",
-        "purpose": "Form field and chip border/background transitions."
+        "purpose": "Field and chip border/background transitions."
       },
       {
         "name": "state",
-        "value": "0.18s",
-        "purpose": "Button, link and arrow-well color transitions."
+        "value": "0.2s",
+        "purpose": "Button, link-row arrow colour transitions."
       },
       {
         "name": "press",
-        "value": "transform translateY(1px) 0.12s",
+        "value": "transform scale(.98) 0.12s",
         "purpose": "Button press feedback."
+      },
+      {
+        "name": "fade-up",
+        "value": "opacity + translateY(12px), 0.4s ease-out",
+        "purpose": "Only elements starting below the first screen; off under reduced motion."
+      },
+      {
+        "name": "float-in",
+        "value": "translateY(120px) to 0, 0.35s cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Floating text circle show/hide."
       },
       {
         "name": "tray-sway",
@@ -267,7 +354,7 @@
       {
         "name": "reduced-motion",
         "value": "prefers-reduced-motion: reduce",
-        "purpose": "Pile drawn once as a still, redrawn on resize only; smooth scroll off."
+        "purpose": "Pile drawn once as a still; fade-up, float and button transitions off; smooth scroll off."
       }
     ],
     "breakpoints": [
@@ -294,142 +381,157 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "The one yellow action per view.",
-      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Tell me what's broken</a>",
-      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:14px;font-family:var(--font,-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif);font-size:16px;font-weight:800;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background .18s,color .18s,border-color .18s,transform .12s}.ds-btn:active{transform:translateY(1px)}.ds-btn:focus-visible{outline:3px solid #ffc629;outline-offset:3px}.ds-btn-primary{background:#ffc629;color:#0f2543;border-color:#ffc629}.ds-btn-primary:hover{background:#ffd65c;border-color:#ffd65c}"
+      "description": "Yellow pill: the thing to do.",
+      "html": "<div style=\"background:#1c4d8c;padding:20px\"><a class=\"ds-btn ds-btn-primary\" href=\"#\">Tell me what's broken</a></div>",
+      "css": "@import url(\"https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap\");:root{--paper:#f4f6fb;--card:#fff;--ink:#0f2543;--soft:#4a5868;--navy:#1c4d8c;--deep:#0f2543;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--yellow:#ffc629;--yellow-2:#ffd65c;--yellow-ink:#8a5a00;--focus:#1c4d8c;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}.ds-btn-primary{background:var(--yellow);color:var(--ink);border-color:var(--yellow)}.ds-btn-primary:hover{background:var(--yellow-2);border-color:var(--yellow-2)}"
     },
     {
       "name": "Ghost Button",
       "kind": "button",
       "refersTo": "button-ghost",
-      "description": "Secondary hero action on blue, outlined never filled.",
-      "html": "<div style=\"background:#1c4d8c;padding:20px\"><a class=\"ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\"/></svg>Text Yuri</a></div>",
-      "css": ".ds-btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:14px;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;font-size:16px;font-weight:800;text-decoration:none;background:transparent;color:#f4f7fb;border:2px solid rgba(244,247,251,.7);transition:color .18s,border-color .18s,transform .12s}.ds-btn-ghost:hover{border-color:#ffc629;color:#ffc629}.ds-btn-ghost:active{transform:translateY(1px)}.ds-btn-ghost:focus-visible{outline:3px solid #ffc629;outline-offset:3px}"
+      "description": "Secondary hero action on navy, outlined never filled.",
+      "html": "<div style=\"background:#1c4d8c;padding:20px\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Text Yuri</a></div>",
+      "css": "@import url(\"https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap\");:root{--paper:#f4f6fb;--card:#fff;--ink:#0f2543;--soft:#4a5868;--navy:#1c4d8c;--deep:#0f2543;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--yellow:#ffc629;--yellow-2:#ffd65c;--yellow-ink:#8a5a00;--focus:#1c4d8c;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}.ds-btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,251,.7)}.ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}"
     },
     {
       "name": "Text Field",
       "kind": "input",
       "refersTo": "input",
-      "description": "Paper field on blue; orange outline on hover and focus.",
-      "html": "<div style=\"background:#1c4d8c;padding:20px;color:#f4f7fb\"><label class=\"ds-label\" for=\"ds-n\">Your name</label><input class=\"ds-input\" id=\"ds-n\" type=\"text\" placeholder=\"First name is fine\"></div>",
-      "css": ".ds-label{display:block;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;font-weight:800;font-size:16px;margin-bottom:8px}.ds-input{width:100%;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;font-size:16px;color:#0f2543;background:#f7f9fb;border:2px solid transparent;border-radius:12px;padding:14px 16px;min-height:54px;caret-color:#1c4d8c;transition:border-color .15s}.ds-input::placeholder{color:#5d6b7c}.ds-input:hover{border-color:#ff8a1f}.ds-input:focus{outline:2px solid #ff8a1f;outline-offset:2px;border-color:#ff8a1f}"
+      "description": "Tinted borderless field inside the white form card; navy border on hover and focus.",
+      "html": "<div style=\"background:#fff;padding:24px;border-radius:24px\"><label class=\"ds-label\" for=\"ds-n\">Your name <small>(optional)</small></label><input class=\"ds-input\" id=\"ds-n\" type=\"text\" placeholder=\"First name is fine\"></div>",
+      "css": "@import url(\"https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap\");:root{--paper:#f4f6fb;--card:#fff;--ink:#0f2543;--soft:#4a5868;--navy:#1c4d8c;--deep:#0f2543;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--yellow:#ffc629;--yellow-2:#ffd65c;--yellow-ink:#8a5a00;--focus:#1c4d8c;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-label{display:block;font:400 17px/1.2 var(--display);color:var(--ink);margin-bottom:8px}.ds-label small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}.ds-input{width:100%;box-sizing:border-box;font:16px/1.4 var(--text);color:var(--ink);background:var(--paper);border:2px solid transparent;border-radius:10px;padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s}.ds-input::placeholder{color:var(--soft)}.ds-input:hover,.ds-input:focus{outline:none;border-color:var(--focus)}"
     },
     {
       "name": "Choice Chips",
       "kind": "chip",
       "refersTo": "chip",
       "description": "Radio choices inside the form only.",
-      "html": "<div style=\"background:#1c4d8c;padding:20px\"><div class=\"ds-chips\"><input type=\"radio\" name=\"ds-w\" id=\"ds-w1\" checked><label for=\"ds-w1\">Today</label><input type=\"radio\" name=\"ds-w\" id=\"ds-w2\"><label for=\"ds-w2\">This week</label><input type=\"radio\" name=\"ds-w\" id=\"ds-w3\"><label for=\"ds-w3\">I'm flexible</label></div></div>",
-      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}.ds-chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:12px;border:2px solid rgba(244,247,251,.55);color:#f4f7fb;font-weight:700;cursor:pointer;transition:border-color .15s,background .15s,color .15s}.ds-chips label:hover{border-color:#ff8a1f}.ds-chips input:checked+label{background:#f4f7fb;color:#0f2543;border-color:#f4f7fb}.ds-chips input:checked+label:hover{border-color:#ff8a1f}.ds-chips input:focus-visible+label{border-color:#ff8a1f;outline:2px solid #ff8a1f;outline-offset:2px}"
+      "html": "<div style=\"background:#fff;padding:24px;border-radius:24px\"><div class=\"ds-chips\"><input type=\"radio\" name=\"ds-w\" id=\"ds-w1\" checked><label for=\"ds-w1\">Today</label><input type=\"radio\" name=\"ds-w\" id=\"ds-w2\"><label for=\"ds-w2\">This week</label><input type=\"radio\" name=\"ds-w\" id=\"ds-w3\"><label for=\"ds-w3\">I'm flexible</label></div></div>",
+      "css": ":root{--paper:#f4f6fb;--card:#fff;--ink:#0f2543;--soft:#4a5868;--navy:#1c4d8c;--deep:#0f2543;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--yellow:#ffc629;--yellow-2:#ffd65c;--yellow-ink:#8a5a00;--focus:#1c4d8c;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-chips{display:flex;flex-wrap:wrap;gap:10px}.ds-chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}.ds-chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:var(--paper);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chips label:hover,.ds-chips input:focus-visible+label{border-color:var(--focus)}.ds-chips input:checked+label{background:var(--ink);color:#fff}"
+    },
+    {
+      "name": "Claim List",
+      "kind": "custom",
+      "refersTo": "claim-list",
+      "description": "Plain divided proof list on paper; not interactive, no card.",
+      "html": "<div style=\"background:#f4f6fb;padding:20px\"><div class=\"ds-claim\"><svg viewBox=\"0 0 40 40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 4l13 5v9c0 8.5-5.6 15.3-13 18-7.4-2.7-13-9.5-13-18V9z\"/><path d=\"M14 20l4.5 4.5L27 16\"/></svg>Fully insured and bonded</div></div>",
+      "css": "@import url(\"https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap\");:root{--paper:#f4f6fb;--card:#fff;--ink:#0f2543;--soft:#4a5868;--navy:#1c4d8c;--deep:#0f2543;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--yellow:#ffc629;--yellow-2:#ffd65c;--yellow-ink:#8a5a00;--focus:#1c4d8c;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-claim{display:flex;align-items:center;gap:16px;padding:16px 0;font:400 22px/1.15 var(--display);color:var(--ink)}.ds-claim svg{width:40px;height:40px;flex:none;color:var(--yellow-ink)}"
     },
     {
       "name": "Link Row with Arrow",
       "kind": "custom",
       "refersTo": "link-row",
-      "description": "Tappable row; on hover only the arrow well fills yellow.",
-      "html": "<a class=\"ds-row\" href=\"#\">See me on Facebook<span class=\"ds-go\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a>",
-      "css": ".ds-row{display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 20px;border-radius:14px;background:#f7f9fb;border:2px solid #1c4d8c;color:#0f2543;text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;font-weight:800;font-size:18px;max-width:420px}.ds-row:focus-visible{outline:none}.ds-go{margin-left:auto;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#dfe6ee;color:#0f2543;transition:background .18s}.ds-row:hover .ds-go{background:#ffc629}.ds-row:focus-visible .ds-go{background:#ffc629;outline:3px solid #1c4d8c;outline-offset:3px}"
-    },
-    {
-      "name": "Claim List",
-      "kind": "custom",
-      "refersTo": null,
-      "description": "Proof as a plain list with hairline seams, not cards.",
-      "html": "<ul class=\"ds-claims\"><li><svg viewBox=\"0 0 40 40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"20\" cy=\"21\" r=\"14\"/><path d=\"M20 13v8l5 4M15 3h10\"/></svg>Same-day repair</li><li><svg viewBox=\"0 0 40 40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 4l13 5v9c0 8.5-5.6 15.3-13 18-7.4-2.7-13-9.5-13-18V9z\"/><path d=\"M14 20l4.5 4.5L27 16\"/></svg>Fully insured and bonded</li></ul>",
-      "css": ".ds-claims{list-style:none;margin:0;padding:0;background:#eef2f6;color:#0f2543;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-claims li{display:flex;align-items:center;gap:16px;padding:14px 0;font-weight:800;font-size:22px;text-transform:uppercase;letter-spacing:-.01em;line-height:1.1}.ds-claims li+li{border-top:1px solid #dfe6ee}.ds-claims svg{width:40px;height:40px;flex:none;color:#1c4d8c}"
+      "description": "Tappable white row; on hover only the arrow well fills yellow.",
+      "html": "<div style=\"background:#f4f6fb;padding:20px\"><a class=\"ds-row\" href=\"#\"><span>See me on Facebook</span><span class=\"ds-go\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": "@import url(\"https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap\");:root{--paper:#f4f6fb;--card:#fff;--ink:#0f2543;--soft:#4a5868;--navy:#1c4d8c;--deep:#0f2543;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--yellow:#ffc629;--yellow-2:#ffd65c;--yellow-ink:#8a5a00;--focus:#1c4d8c;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:72px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--card);color:var(--ink);text-decoration:none;font:400 20px/1.2 var(--display);max-width:440px}.ds-row:focus-visible{outline:none}.ds-go{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(15,37,67,.07);color:var(--ink);transition:background-color .2s}.ds-row:hover .ds-go{background:var(--yellow)}.ds-row:focus-visible .ds-go{background:var(--yellow);outline:3px solid var(--focus);outline-offset:3px}"
     },
     {
       "name": "Numbered Steps",
       "kind": "custom",
       "refersTo": "step-marker",
-      "description": "Three static steps with blue circle numerals.",
-      "html": "<ol class=\"ds-steps\"><li><div><b>Text or call me.</b><span>Big job or small, ask me.</span></div></li><li><div><b>I come and fix it.</b><span>At a fair price.</span></div></li></ol>",
-      "css": ".ds-steps{list-style:none;margin:0;padding:0;display:grid;gap:22px;counter-reset:s;color:#0f2543;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}.ds-steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#1c4d8c;color:#f4f7fb;font-weight:900;font-size:20px}.ds-steps b{display:block;font-size:20px;font-weight:800;line-height:1.2;margin-top:2px}.ds-steps span{display:block;color:#5d6b7c;margin-top:4px}"
+      "description": "Static steps on textured deep blue with yellow numerals.",
+      "html": "<div class=\"ds-deep\"><ol class=\"ds-steps\"><li><div><b>Text or call me.</b><span>Big job or small, ask me.</span></div></li><li><div><b>I come and fix it.</b><span>At a fair price.</span></div></li></ol></div>",
+      "css": "@import url(\"https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap\");:root{--paper:#f4f6fb;--card:#fff;--ink:#0f2543;--soft:#4a5868;--navy:#1c4d8c;--deep:#0f2543;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--yellow:#ffc629;--yellow-2:#ffd65c;--yellow-ink:#8a5a00;--focus:#1c4d8c;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-deep{background-color:var(--deep);background-image:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);padding:24px;color:var(--on-dark-soft);font:16px/1.7 var(--text)}.ds-steps{list-style:none;margin:0;padding:0;display:grid;gap:24px;counter-reset:s}.ds-steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}.ds-steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--ink);font:400 20px/1 var(--display)}.ds-steps b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}.ds-steps span{display:block;margin-top:4px}"
     },
     {
       "name": "Header",
       "kind": "nav",
       "refersTo": "header",
-      "description": "Wordmark left, tap-to-call number top right; no menu.",
-      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><b>DPG</b><span>Home Improvement Inc</span></a><a class=\"ds-tel\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z\"/></svg>(201) 342-8837</a></header>",
-      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 20px;background:#1c4d8c;color:#f4f7fb;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-brand{display:flex;flex-direction:column;justify-content:center;min-height:44px;color:inherit;text-decoration:none;line-height:1}.ds-brand b{font-size:21px;font-weight:900;letter-spacing:-.01em;text-transform:uppercase}.ds-brand span{font-size:11px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;color:#c9d7ea;margin-top:4px}.ds-tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:inherit;font-weight:800;font-size:16px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}.ds-tel svg{color:#ffc629}.ds-tel:hover{color:#ffc629}.ds-tel:focus-visible{outline:3px solid #ffc629;outline-offset:3px;border-radius:6px}"
+      "description": "Paper bar: wordmark left, tap-to-call number top right; no menu.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><b>DPG</b><span>Home Improvement Inc</span></a><a class=\"ds-tel\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>(201) 342-8837</a></header>",
+      "css": "@import url(\"https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap\");:root{--paper:#f4f6fb;--card:#fff;--ink:#0f2543;--soft:#4a5868;--navy:#1c4d8c;--deep:#0f2543;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--yellow:#ffc629;--yellow-2:#ffd65c;--yellow-ink:#8a5a00;--focus:#1c4d8c;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 20px;background:var(--paper);color:var(--ink)}.ds-brand{display:flex;flex-direction:column;justify-content:center;min-height:44px;color:inherit;text-decoration:none;line-height:1}.ds-brand b{font:400 21px/1 var(--display);letter-spacing:.01em}.ds-brand span{font:600 11px/1 var(--text);letter-spacing:.08em;text-transform:uppercase;color:var(--soft);margin-top:5px}.ds-tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:inherit;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums;word-spacing:-.12em}.ds-tel svg{color:var(--yellow-ink)}.ds-tel:hover{color:var(--yellow-ink)}.ds-tel:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Floating Text Circle",
+      "kind": "custom",
+      "refersTo": "float-text",
+      "description": "The one fixed element: a yellow SMS circle, the only DOM shadow.",
+      "html": "<div style=\"position:relative;height:100px;background:#f4f6fb\"><a class=\"ds-float\" href=\"#\" aria-label=\"Text Yuri\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\" aria-hidden=\"true\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div>",
+      "css": ":root{--paper:#f4f6fb;--card:#fff;--ink:#0f2543;--soft:#4a5868;--navy:#1c4d8c;--deep:#0f2543;--on-dark:#f4f7fb;--on-dark-soft:#c9d7ea;--yellow:#ffc629;--yellow-2:#ffd65c;--yellow-ink:#8a5a00;--focus:#1c4d8c;--display:\"Cal Sans\",\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif}.ds-float{position:absolute;right:16px;bottom:16px;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--ink);box-shadow:0 10px 28px rgba(8,24,46,.3)}.ds-float:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
     }
   ],
   "narrative": {
-    "northStar": "The Parts Tray",
-    "overview": "The site is a hardware-store parts tray: a flat field of parts-bin blue and galvanized zinc, set in heavy uppercase type, with a real pile of zinc, brass and black-oxide nuts, washers, screws and bolts that the visitor can stir. All the depth and material lives in that pile. The page around it stays flat, firm and plain, like the painted bin the parts sit in.\n\nDensity is low and the voice is loud. Each screen carries one claim in very heavy uppercase, one supporting line in a quieter tone, and at most two actions. Tape-measure yellow marks the single thing to do. Proof is a plain list with hairline seams, not a grid of cards. The pile comes back between sections as a thin band riding the seam where blue meets zinc, so the tray holds the whole page together.\n\nThe build rejects the category default (stock-photo hero over a twelve-icon services grid) and any effect that doesn't read as a real object. The parts are drawn as hardware, lit from one side.",
+    "northStar": "The Parts Tray on a Clean Bench",
+    "overview": "The site is still a hardware-store parts tray: a real pile of zinc, brass and black-oxide nuts, washers, screws and bolts that the visitor can stir. The page around it is now calm, after lpmr.co.uk: off-white paper bands alternating with two blues, soft rounded white cards, pill buttons, and a rounded display face set at regular weight. The pile carries all the material and depth; the page is a clean, quiet bench under it.\n\nDensity is low and the voice is friendly rather than loud. Each band carries one heading, one quieter supporting line and at most two actions. Tape-measure yellow is the only warm colour and is used as a fill for the thing to do (and the step numerals, and the floating text circle); on dark bands a short accent phrase in a heading turns yellow. Proof is a stack of white cards on paper. The pile comes back between sections as a thin band that fills into the next ground.\n\nThe build rejects the category default (stock-photo hero over a twelve-icon services grid) and any effect that does not read as a real object.",
     "keyCharacteristics": [
-      "Two grounds only: parts-bin blue and galvanized zinc, alternating by section, with deep blue for the footer.",
-      "One yellow action per view; orange appears only inside the form.",
-      "Heavy 900-weight uppercase headings with tight negative tracking, on the house system font stack.",
-      "Flat DOM surfaces. Depth comes only from the canvas parts, lit from the upper left.",
-      "Live parts pile in the hero (drops, pushes, taps) and as seam bands between sections.",
-      "Tap targets 44px minimum, buttons 56px, body never below 16px."
+      "Three grounds: paper, parts-bin navy, and deep blue with a faint 135° line texture.",
+      "Yellow as a fill (buttons, step numerals, float circle); a darker yellow-ink only when yellow must be text or a glyph on light.",
+      "Cal Sans display at weight 400 for every heading, button, label and phone number; system sans body at 16px/1.7.",
+      "Generous rounding: 24px cards, 999px pills, 10px fields, circles for markers.",
+      "Flat DOM with one exception: the floating text circle's soft shadow.",
+      "Live parts pile in the hero (drops, pushes, taps) and as bands between sections.",
+      "Tap targets 44px minimum, buttons 56px, reading text 16px or larger."
     ],
     "rules": [
       {
-        "name": "The Two Grounds Rule",
-        "body": "Every section sits on parts-bin blue or galvanized zinc; the footer alone is deep blue. Consecutive sections on different grounds are joined by a parts band whose pile fills down into the next section's color, never by a straight hard edge.",
+        "name": "The Yellow Is A Fill Rule",
+        "body": "Tape yellow (`#ffc629`) appears as a filled shape or, on blue, as type and glyphs. On paper or white it is never text; use yellow-ink there.",
         "section": "colors"
       },
       {
-        "name": "The One Yellow Rule",
-        "body": "Yellow fill belongs to the primary action. Everywhere else yellow is a stroke, glyph, type or hover state, and only one yellow-filled button is visible at a time.",
+        "name": "The Accent On Dark Rule",
+        "body": "An accent phrase inside a heading is yellow, and only on navy or deep bands. Headings on paper stay all ink.",
         "section": "colors"
       },
       {
-        "name": "The Orange Stays In The Form Rule",
-        "body": "Orange is the form's hover/focus/error accent and appears on no other surface. It exists because yellow is already the submit button's fill and can't also be its outline.",
+        "name": "The Navy Focus Rule",
+        "body": "On light grounds, hover and focus for interactive controls use navy (3px ring with 3px offset; form controls switch their 2px border to navy, the submit button takes a 2px navy outline at 2px offset). On dark bands the ring turns yellow. Yellow is never the outline of a yellow-filled control.",
         "section": "colors"
       },
       {
-        "name": "The Heavy Caps Rule",
-        "body": "Headings and claim rows are 800–900 weight, uppercase, with negative tracking and line-height at or below 1.1. Body, ledes, step text, form copy and buttons are never uppercase.",
+        "name": "The One Weight Rule",
+        "body": "Cal Sans is only ever weight 400 and sentence case. Hierarchy comes from size, colour and ground, never from bolding or uppercase. The only bold is a 600-weight phrase inside body copy (the promise's \"Yuri, your local handyman.\").",
         "section": "typography"
       },
       {
         "name": "The Sixteen Floor Rule",
-        "body": "No reading text below 16px, form inputs included (prevents iOS zoom). Hierarchy comes from weight and case, not tiny sizes.",
+        "body": "Reading text and form inputs are 16px or larger (prevents iOS zoom). The 15px note and 14px caption are the only smaller sizes, and they are never the main message.",
         "section": "typography"
       },
       {
         "name": "The Number Top-Right Rule",
-        "body": "On the first screen the phone number appears once, as a tap-to-call link in the header's top-right corner. Under the hero headline there are at most two buttons, and neither is a Call button. The number comes back in the closing section and the footer only. No sticky bottom bar, ever.",
+        "body": "On the first screen the phone number appears once, as a tap-to-call link in the header's top-right corner. Under the hero headline there are at most two buttons, and neither is a Call button. The number comes back in the closing band and the footer only.",
+        "section": "layout"
+      },
+      {
+        "name": "The One Circle Rule",
+        "body": "The only fixed element is a single 60px yellow text circle, bottom-right with 16px plus safe-area insets. It appears after the hero leaves view and hides while the form is on screen. Never a sticky bottom bar, never a call button.",
         "section": "layout"
       },
       {
         "name": "The Clear Zone Rule",
-        "body": "Text never sits over the pile. The hero copy has its own band above the tray, and bands sit between sections, never behind headings.",
+        "body": "Text never sits over the pile. The hero copy has its own zone above the tray, and bands sit between sections, never behind headings.",
         "section": "layout"
       },
       {
         "name": "The One Light Rule",
-        "body": "Every part on the page is lit from the upper left and casts its shadow downward, whatever its rotation. Sprites are baked at eight fixed turns so the light never rotates with the part.",
+        "body": "Every part is lit from the upper left and casts its shadow downward, whatever its rotation. Sprites are baked at eight fixed turns so the light never rotates with the part.",
         "section": "elevation"
       },
       {
-        "name": "The Flat Bin Rule",
-        "body": "Shadows are for hardware, not for interface. A DOM element that needs emphasis gets a border, a tone shift or yellow, never a shadow.",
+        "name": "The Floating Only Rule",
+        "body": "A DOM shadow is reserved for the one element that floats over content. Cards, buttons and fields get tone, never shadow.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "**Do** alternate parts-bin blue and galvanized zinc grounds, and join them with a parts band that fills into the next ground.",
-      "**Do** keep one yellow-filled action in view; secondary actions on blue are ghost-outlined (2px, 14px corners).",
-      "**Do** outline every form control in form orange on hover and on focus (2px outline, 2px offset), and use orange only there.",
-      "**Do** change only the arrow well on hover for tappable rows with an arrow (zinc-seam to yellow), and put their focus ring on the arrow.",
+      "**Do** alternate paper with navy or textured deep-blue bands, and join deep-to-paper and paper-to-navy with a parts band that fills into the next ground.",
+      "**Do** use tape yellow as a fill for the primary action, step numerals and the float circle, and yellow-ink (`#8a5a00`) when yellow must be a glyph on light.",
+      "**Do** set every heading, button, label and phone number in Cal Sans at weight 400, sentence case.",
+      "**Do** put claims and the form in white 24px cards on paper; keep buttons and chips as full pills.",
+      "**Do** show hover and focus in navy on light grounds and in yellow on dark bands, with a 3px ring at a 3px offset.",
       "**Do** put hover styles inside `@media (hover:hover)` so taps don't leave them stuck.",
-      "**Do** set headings at 900 weight, uppercase, tracked -0.02em to -0.035em, line-height 1 or below, on the system font stack.",
-      "**Do** keep tap targets at 44px minimum and buttons at 56px, with text at 16px or larger.",
+      "**Do** keep tap targets at 44px minimum and buttons at 56px, with reading text at 16px or larger.",
       "**Do** light every part from the upper left with its shadow falling down, and give the pile a still frame under reduced motion."
     ],
     "donts": [
-      "**Don't** put a box-shadow on any DOM surface or control; depth is tone, border, and the canvas parts.",
+      "**Don't** set yellow (`#ffc629`) as text on paper or white.",
+      "**Don't** put a yellow accent phrase in a heading on a paper band.",
+      "**Don't** bold or uppercase Cal Sans.",
+      "**Don't** add a box-shadow to cards, buttons or fields; the floating text circle is the only shadowed element.",
       "**Don't** show the phone number twice on the first screen, put a Call button under the hero headline, or add a sticky bottom bar.",
-      "**Don't** turn proof or claims into cards; they are a plain list with 1px hairlines.",
-      "**Don't** style non-interactive labels or town names as chips or pills; chips are for real form choices only.",
-      "**Don't** let the pile, or any pattern, run behind text.",
-      "**Don't** use pill (fully rounded) buttons; corners are 12–14px.",
+      "**Don't** let the pile, or any texture other than the deep band's faint lines, run behind text.",
+      "**Don't** style non-interactive labels or town names as chips.",
       "**Don't** add effects that don't read as real hardware (sheens, glints, abstract particles)."
     ]
   }

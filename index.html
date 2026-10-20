@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>DPG Home Improvement Inc · Yuri, your local handyman · River Edge, NJ</title>
 <meta name="description" content="Same-day repair from Yuri, your local handyman in River Edge, NJ. Fully insured and bonded, one-year warranty on labor. Call (201) 342-8837.">
-<meta name="theme-color" content="#1c4d8c">
+<meta name="theme-color" content="#f4f6fb">
 <meta property="og:type" content="website">
-<meta property="og:title" content="DPG Home Improvement Inc · Broken today. Fixed today.">
+<meta property="og:title" content="DPG Home Improvement Inc · Broken in River Edge? Fixed today.">
 <meta property="og:description" content="Yuri, your local handyman in River Edge, NJ. Same-day repair. Call (201) 342-8837.">
 <meta property="og:url" content="https://10elizabethbell.github.io/dpgHomeImprovement/">
 <meta property="og:image" content="https://10elizabethbell.github.io/dpgHomeImprovement/og.png">
@@ -16,138 +16,173 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap">
 <style>
 /* ---------- Tokens ---------- */
 :root{
-  --blue:#1c4d8c;        /* parts-bin blue: hero, form, bands */
-  --blue-deep:#123766;   /* footer, pressed */
-  --blue-ink:#0f2543;    /* text on light */
-  --zinc:#eef2f6;        /* galvanized light ground */
-  --zinc-2:#dfe6ee;
-  --steel:#5d6b7c;       /* secondary text on light */
-  --paper:#f7f9fb;
-  --on-blue:#f4f7fb;
-  --on-blue-2:#c9d7ea;   /* secondary text on blue */
-  --yellow:#ffc629;      /* tape-measure yellow: primary action */
+  /* off-white paper, two DPG blues, one tape-measure yellow */
+  --paper:#f4f6fb;       /* page ground */
+  --card:#ffffff;
+  --ink:#0f2543;         /* headings, text on yellow */
+  --body:#2a3a4c;        /* running text on light */
+  --soft:#4a5868;        /* secondary text on light */
+  --navy:#1c4d8c;        /* parts-bin blue: hero, close */
+  --deep:#0f2543;        /* how it works, footer (line texture) */
+  --on-dark:#f4f7fb;
+  --on-dark-soft:#c9d7ea;
+  --yellow:#ffc629;      /* fills only; text on it is --ink */
   --yellow-2:#ffd65c;
-  --orange:#ff8a1f;      /* form hover/focus accent */
-  --radius:14px;
-  --font:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --yellow-ink:#8a5a00;  /* yellow as text on light (5.5:1) */
+  --line:rgba(15,37,67,.12);
+  --focus:#1c4d8c;       /* form hover/focus outline, distinct from the yellow fill */
+  --error:#b3261e;
+  --texture:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);
+  --display:"Cal Sans","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --text:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --r-card:24px;--r-field:10px;--pill:999px;
   --gutter:20px;
+  --pad:64px;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;overscroll-behavior-y:none;scroll-behavior:smooth;background:var(--blue)}
-body{margin:0;font-family:var(--font);font-size:16px;line-height:1.55;color:var(--blue-ink);background:var(--zinc)}
-::selection{background:var(--yellow);color:var(--blue-ink)}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;overscroll-behavior-y:none;scroll-behavior:smooth;background:var(--paper)}
+body{margin:0;font:16px/1.7 var(--text);color:var(--body);background:var(--paper)}
+::selection{background:var(--yellow);color:var(--ink)}
 img,svg,canvas{display:block}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--yellow);outline-offset:3px;border-radius:6px}
-.light :focus-visible,.close :focus-visible{outline-color:var(--blue)}
-.wrap{max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
-h1,h2,h3{margin:0;line-height:1;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;text-wrap:balance}
-h2{font-size:clamp(30px,8.4vw,52px)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.on-navy :focus-visible,.on-deep :focus-visible,.hero :focus-visible,footer :focus-visible{outline-color:var(--yellow)}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gutter)}
+h1,h2,h3{margin:0;font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.005em;color:var(--ink);text-wrap:balance}
+h2{font-size:clamp(30px,7.6vw,48px)}
 p{margin:0}
 
+/* ---------- Bands ---------- */
+section{padding:64px 0}
+.on-paper{background:var(--paper)}
+.on-navy{background:var(--navy);color:var(--on-dark-soft)}
+.on-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft)}
+.on-navy h2,.on-deep h2,.on-navy h3,.on-deep h3{color:var(--on-dark)}
+.accent{color:var(--yellow-ink)}
+.on-navy .accent,.on-deep .accent,.hero .accent{color:var(--yellow)}
+.head{display:grid;gap:16px;justify-items:start;max-width:640px}
+.lede{font-size:clamp(17px,4.6vw,19px);color:var(--soft);max-width:38ch}
+.on-navy .lede,.on-deep .lede{color:var(--on-dark-soft)}
+
+/* Eyebrow: a few key headings only. A label, not a button. */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(15,37,67,.06);padding:9px 14px;border-radius:var(--pill)}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--yellow)}
+.hero .eyebrow,.on-navy .eyebrow,.on-deep .eyebrow{color:var(--on-dark);background:rgba(255,255,255,.12)}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:var(--pill);font:400 18px/1 var(--display);text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}
+.btn:active{transform:scale(.98)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-primary{background:var(--yellow);color:var(--ink);border-color:var(--yellow)}
+.btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,251,.7)}
+
 /* ---------- Header ---------- */
-.top{background:var(--blue);color:var(--on-blue)}
+.top{background:var(--paper);color:var(--ink)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding-top:max(8px,env(safe-area-inset-top))}
 .brand{display:flex;flex-direction:column;justify-content:center;min-height:44px;text-decoration:none;line-height:1}
-.brand b{font-size:21px;font-weight:900;letter-spacing:-.01em;text-transform:uppercase}
-.brand span{font-size:11px;font-weight:700;letter-spacing:.03em;white-space:nowrap;text-transform:uppercase;color:var(--on-blue-2);margin-top:4px}
-.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font-weight:800;font-size:16px;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
-.tel svg{width:18px;height:18px;flex:none;color:var(--yellow)}
+.brand b{font:400 21px/1 var(--display);letter-spacing:.01em}
+.brand span{font:600 11px/1 var(--text);letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:var(--soft);margin-top:5px}
+.tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
+.tel svg{width:18px;height:18px;flex:none;color:var(--yellow-ink)}
 
 /* ---------- Hero ---------- */
-.hero{padding:0;position:relative;background:var(--blue);color:var(--on-blue);display:flex;flex-direction:column;min-height:calc(min(100svh,860px) - 64px);overflow:hidden}
-.hero-copy{width:100%;position:relative;z-index:1;padding-top:22px;padding-bottom:6px}
-.hero h1{font-size:clamp(46px,14.6vw,96px);line-height:.9;letter-spacing:-.035em}
-.hero h1 em{font-style:normal;color:var(--yellow);display:block}
-.promise{margin-top:16px;font-size:clamp(17px,4.7vw,20px);line-height:1.4;color:var(--on-blue-2);max-width:30ch}
-.promise b{color:var(--on-blue);font-weight:700}
-.actions{display:flex;flex-direction:column;gap:12px;margin-top:22px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:var(--radius);font:inherit;font-size:16px;font-weight:800;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background .18s,color .18s,border-color .18s,transform .12s}
-.btn:active{transform:translateY(1px)}
-.btn svg{width:20px;height:20px;flex:none}
-.btn-primary{background:var(--yellow);color:var(--blue-ink);border-color:var(--yellow)}
-.btn-ghost{background:transparent;color:var(--on-blue);border-color:rgba(244,247,251,.7)}
+.hero{padding:0;position:relative;background:var(--navy);color:var(--on-dark);display:flex;flex-direction:column;min-height:calc(min(100svh,860px) - 64px);overflow:hidden}
+.hero-copy{position:relative;z-index:1;display:grid;gap:20px;justify-items:start;padding-top:36px;padding-bottom:6px}
+.hero h1{color:#fff;font-size:clamp(42px,12vw,80px);line-height:1.02;max-width:12ch}
+.promise{font-size:clamp(17px,4.7vw,20px);line-height:1.5;color:var(--on-dark-soft);max-width:30ch}
+.promise b{color:var(--on-dark);font-weight:600}
+.actions{display:grid;gap:12px;width:100%;margin-top:4px}
 .tray{position:relative;flex:1 1 auto;min-height:190px;margin-top:6px}
 .tray canvas{position:absolute;inset:0;width:100%;height:100%}
 /* static stand-in for the parts pile until the script paints it */
 .tray::before,.band::before{content:"";position:absolute;left:0;right:0;bottom:0;height:62%;background:linear-gradient(180deg,rgba(185,194,204,0) 0,rgba(140,152,166,.55) 30%,#5f6c7c 100%);border-radius:50% 50% 0 0/22px 22px 0 0}
 .tray.live::before,.band.live::before{display:none}
 .hero .tray canvas{touch-action:none}
+/* CONFIG.HERO = 'calm': no pile, navy with the line texture instead */
+.hero.calm{background-color:var(--navy);background-image:var(--texture);min-height:0}
+.hero.calm .hero-copy{padding-top:var(--pad);padding-bottom:var(--pad)}
 
-/* ---------- Sections ---------- */
-section{padding:64px 0}
-.light{background:var(--zinc)}
-.lede{margin-top:16px;font-size:clamp(17px,4.6vw,20px);line-height:1.5;color:var(--steel);max-width:36ch}
+/* ---------- Trust ---------- */
+.claims{list-style:none;margin:28px 0 0;padding:0;display:grid}
+.claims li{display:flex;align-items:center;gap:16px;padding:16px 0;font:400 clamp(20px,5.4vw,24px)/1.15 var(--display);color:var(--ink)}
+.claims li+li{border-top:1px solid var(--line)}
+.claims svg{width:40px;height:40px;flex:none;color:var(--yellow-ink)}
+.fb{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:72px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--card);color:var(--ink);text-decoration:none;font:400 clamp(18px,5vw,20px)/1.2 var(--display);max-width:440px}
+.fb:hover,.fb:focus-visible{outline:none;background:var(--card);box-shadow:none}
+.fb .lbl{display:flex;align-items:center;gap:14px}
+.fb .lbl svg{width:28px;height:28px;flex:none;color:var(--navy)}
+.arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(15,37,67,.07);color:var(--ink);transition:background-color .2s,color .2s}
+.arrow svg{width:18px;height:18px}
+.fb:focus-visible .arrow{background:var(--yellow);outline:3px solid var(--focus);outline-offset:3px}
 
-/* Claims: plain list, not cards */
-.claims{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:4px}
-.claims li{display:flex;align-items:center;gap:16px;padding:14px 0;font-weight:800;font-size:clamp(19px,5.4vw,24px);text-transform:uppercase;letter-spacing:-.01em;line-height:1.1}
-.claims li+li{border-top:1px solid var(--zinc-2)}
-.claims svg{width:40px;height:40px;flex:none;color:var(--blue)}
-.fb{margin-top:32px;display:flex;align-items:center;gap:14px;min-height:64px;padding:12px 20px;border-radius:var(--radius);background:var(--paper);border:2px solid var(--blue);color:var(--blue-ink);text-decoration:none;font-weight:800;font-size:clamp(17px,5vw,20px);max-width:420px;transition:none}
-.fb:focus-visible{outline:none}
-.fb:focus-visible .go{background:var(--yellow);outline:3px solid var(--blue);outline-offset:3px}
-.fb svg{width:28px;height:28px;flex:none;color:var(--blue);transition:color .18s}
-.fb .go{margin-left:auto;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--zinc-2);transition:background .18s}
-.fb .go svg{width:18px;height:18px;color:var(--blue-ink)}
-
-/* How it works */
-.how{padding-top:8px}
-.steps{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:22px;counter-reset:s}
+/* ---------- How it works ---------- */
+.steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px;counter-reset:s}
 .steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}
-.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:var(--on-blue);font-weight:900;font-size:20px}
-.steps b{display:block;font-size:20px;font-weight:800;line-height:1.2;margin-top:2px}
-.steps span{display:block;color:var(--steel);margin-top:4px}
+.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--ink);font:400 20px/1 var(--display)}
+.steps b{display:block;font:400 21px/1.2 var(--display);color:var(--on-dark);margin-top:4px}
+.steps span{display:block;margin-top:4px}
 
-/* Parts band divider */
-.band{position:relative;height:120px;background:var(--blue);overflow:hidden}
+/* ---------- Parts band divider ---------- */
+.band{position:relative;height:120px;overflow:hidden;padding:0}
 .band canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:pan-y}
-.band.flip{background:var(--zinc)}
+.band.from-deep{background-color:var(--deep);background-image:var(--texture)}
+.band.from-paper{background:var(--paper)}
 
 /* ---------- Form ---------- */
-.ask{background:var(--blue);color:var(--on-blue)}
-.ask .lede{color:var(--on-blue-2)}
-form{margin-top:28px;display:grid;gap:20px;max-width:560px}
-.field label,.field legend{display:block;font-weight:800;font-size:16px;margin-bottom:8px;padding:0}
-.field small{font-weight:600;color:var(--on-blue-2)}
+.ask .wrap{display:grid;gap:28px}
+form{background:var(--card);border-radius:var(--r-card);padding:clamp(20px,5vw,32px);display:grid;gap:20px;max-width:600px}
+.field{display:grid;gap:8px;min-width:0}
+.field label,.field legend{font:400 17px/1.2 var(--display);color:var(--ink);padding:0}
+.field small{font:400 14px/1 var(--text);color:var(--soft);margin-left:4px}
 fieldset{border:0;margin:0;padding:0;min-width:0}
-input[type=text],input[type=tel],textarea{width:100%;font:inherit;font-size:16px;color:var(--blue-ink);background:var(--paper);border:2px solid transparent;border-radius:12px;padding:14px 16px;min-height:54px;caret-color:var(--blue);transition:border-color .15s,box-shadow .15s}
+input[type=text],input[type=tel],textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--paper);border:2px solid transparent;border-radius:var(--r-field);padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s}
 textarea{min-height:120px;resize:vertical}
-input::placeholder,textarea::placeholder{color:#5d6b7c}
-input[type=text]:focus,input[type=tel]:focus,textarea:focus{outline:2px solid var(--orange);outline-offset:2px;border-color:var(--orange)}
+input::placeholder,textarea::placeholder{color:var(--soft)}
+input[type=text]:focus,input[type=tel]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}
-.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:12px;border:2px solid rgba(244,247,251,.55);font-weight:700;cursor:pointer;margin:0;transition:border-color .15s,background .15s,color .15s}
-.chips input:focus-visible+label{border-color:var(--orange);outline:2px solid var(--orange);outline-offset:2px}
-.chips input:checked+label{background:var(--on-blue);color:var(--blue-ink);border-color:var(--on-blue)}
-.err{display:none;margin-top:8px;font-weight:700;font-size:16px;color:#ffd0a6}
+.chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:var(--pill);background:var(--paper);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;margin:0;transition:border-color .15s,background-color .15s,color .15s}
+.chips input:focus-visible+label{border-color:var(--focus);outline:none}
+.chips input:checked+label{background:var(--ink);color:#fff}
+.err{display:none;font-size:15px;color:var(--error)}
 .field.bad .err{display:block}
-.field.bad input,.field.bad textarea{border-color:var(--orange);border-width:3px}
+.field.bad input,.field.bad textarea{border-color:var(--error)}
 form .btn-primary{width:100%}
-form .btn-primary:focus-visible{outline:2px solid var(--orange);outline-offset:2px;border-color:var(--orange)}
-.after{font-size:16px;color:var(--on-blue-2)}
-.after a{font-variant-numeric:tabular-nums;display:inline-block;padding:13px 0;margin:-13px 0;font-weight:800;color:var(--on-blue);white-space:nowrap}
-.sent{font-weight:700;color:var(--on-blue)}
-.sent a{font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}
-@media (max-width:380px){.chips label{padding:0 13px}}
+form .btn-primary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.after{font-size:15px;color:var(--soft)}
+.sent{color:var(--ink);font-weight:600}
+.sent a{white-space:nowrap;font-variant-numeric:tabular-nums;display:inline-block;padding:11px 0;margin:-11px 0}
+@media (max-width:380px){.chips label{padding:0 14px}}
 
 /* ---------- Close ---------- */
-.close{background:var(--zinc);text-align:left}
-.close h2{font-size:clamp(34px,9vw,56px);line-height:.95}
-.close .who{margin-top:14px;font-size:clamp(18px,5vw,22px);font-weight:700;color:var(--steel)}
-.bigtel{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font-size:clamp(30px,9vw,52px);font-weight:900;letter-spacing:-.02em;text-decoration:none;color:var(--blue);font-variant-numeric:tabular-nums;min-height:56px;white-space:nowrap}
-.bigtel svg{width:.8em;height:.8em;flex:none}
-.area{margin-top:22px;color:var(--steel);max-width:40ch}
+.close .who{margin-top:14px;font-size:clamp(18px,5vw,20px);color:var(--on-dark-soft)}
+.bigtel{display:inline-flex;align-items:center;gap:12px;margin-top:28px;font:400 clamp(30px,9vw,52px)/1 var(--display);text-decoration:none;color:var(--on-dark);min-height:56px;white-space:nowrap}
+.bigtel svg{width:.8em;height:.8em;flex:none;color:var(--yellow)}
+.area{margin-top:22px;max-width:40ch}
 
 /* ---------- Footer ---------- */
-footer{background:var(--blue-deep);color:var(--on-blue-2);padding:36px 0 calc(40px + env(safe-area-inset-bottom));font-size:16px}
+footer{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft);padding:48px 0 calc(96px + env(safe-area-inset-bottom));font-size:16px}
 footer .wrap{display:grid;gap:14px}
 .nw{white-space:nowrap;font-variant-numeric:tabular-nums}
 footer nav{display:flex;flex-wrap:wrap;gap:6px 22px}
-footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-blue);font-weight:700;text-decoration:none}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-dark);text-decoration:none}
+
+/* ---------- Floating text circle (one circle, never a bottom bar) ---------- */
+.float{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:var(--ink);box-shadow:0 10px 28px rgba(8,24,46,.3);transform:translateY(120px);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.float.on{transform:none}
+.float svg{width:26px;height:26px}
+.float:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:50%}
+
+/* ---------- Motion: one fade-up, only for things below the first screen ---------- */
+.js .rise{transition:opacity .4s ease-out,transform .4s ease-out}
+.js .rise.below{opacity:0;transform:translateY(12px)}
 
 /* ---------- Desktop ---------- */
 @media (min-width:760px){
@@ -156,113 +191,121 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-b
   .brand b{font-size:24px}
   .tel{font-size:20px}
   .hero{min-height:calc(min(100svh,900px) - 76px)}
-  .hero-copy{padding-top:56px}
-  .promise{max-width:none;white-space:nowrap}
-  .actions{flex-direction:row}
+  .hero-copy{padding-top:64px}
+  section{padding:96px 0}
+  .hero.calm .hero-copy{padding-top:96px;padding-bottom:96px}
+  .promise{max-width:none}
+  .actions{grid-auto-flow:column;justify-content:start;width:auto}
   .actions .btn{min-width:240px}
   .tray{min-height:320px}
-  section{padding:96px 0}
   .band{height:150px}
+  .claims{grid-template-columns:1fr}
 }
 @media (min-width:1024px){
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
-  .claims{margin-top:0}
-  .ask .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
-  form{margin-top:0}
+  .split{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr;column-gap:64px;align-items:start}
+  .split .claims{grid-column:2;grid-row:1/3;margin-top:0}
+  .split .fb{grid-column:1;grid-row:2}
+  .ask .wrap{grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+  .ask .head{position:sticky;top:40px}
   .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
   .bigtel{margin-top:0}
-  .claims li{font-size:30px;padding:20px 0}
-  .claims svg{width:48px;height:48px}
-  .how .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
-  .how .steps{margin-top:0}
+  .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
   .steps b{font-size:22px}
-  .ask .wrap>div:first-child{position:sticky;top:40px}
 }
 /* hover styles only where there is a real pointer, so taps don't leave them stuck on */
 @media (hover:hover){
-.tel:hover{color:var(--yellow)}
+.tel:hover{color:var(--yellow-ink)}
 .btn-primary:hover{background:var(--yellow-2);border-color:var(--yellow-2)}
-.btn-ghost:hover{border-color:var(--yellow);color:var(--yellow)}
-.fb:hover .go{background:var(--yellow)}
-input[type=text]:hover,input[type=tel]:hover,textarea:hover{border-color:var(--orange)}
-.chips label:hover{border-color:var(--orange)}
-.chips input:checked+label:hover{border-color:var(--orange)}
-form .btn-primary:hover{outline:2px solid var(--orange);outline-offset:2px;border-color:var(--orange)}
-.after a:hover{color:var(--yellow)}
-.bigtel:hover{color:var(--blue-deep);text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+.fb:hover .arrow{background:var(--yellow);color:var(--ink)}
+input[type=text]:hover,input[type=tel]:hover,textarea:hover{border-color:var(--focus)}
+.chips label:hover{border-color:var(--focus)}
+form .btn-primary:hover{outline:2px solid var(--focus);outline-offset:2px}
+.sent a:hover{color:var(--navy)}
+.bigtel:hover{color:var(--yellow)}
 footer a:hover{color:var(--yellow)}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rise,.float,.btn{transition:none}
+  .js .rise.below{opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 <!--
-THESIS: A handyman's site that is a parts tray, not a services grid. The category ships a stock-photo hero over a twelve-icon service list; this page has one claim (broken today, fixed today) and a pile of real hardware you can stir.
-OWN-WORLD: Parts-bin blue (#1c4d8c) grounds, galvanized zinc light sections, tape-measure yellow for the one primary action. Shaded zinc, brass and black-oxide nuts, washers, screws and bolts. Heavy uppercase system type.
+THESIS: A handyman's site that is a parts tray, not a services grid, set in a calm light-and-navy page (after lpmr.co.uk). One claim (broken today, fixed today) and a pile of real hardware you can stir.
+OWN-WORLD: Off-white paper, parts-bin blue (#1c4d8c) and deep blue (#0f2543, faint diagonal lines) bands, tape-measure yellow as the one warm accent (fills only; #8a5a00 when it has to be text on light). Cal Sans display, system body at 16/1.7. Shaded zinc, brass and black-oxide nuts, washers, screws and bolts.
 STORY: The visitor sees who fixes things in River Edge, believes Yuri shows up, is insured and backs his work, and calls or texts him.
-FIRST VIEWPORT: Header with wordmark left and tap-to-call number top right. Headline "Broken today. Fixed today." huge, one promise line, two buttons (Tell me what's broken, Text Yuri). Under them, filling the rest of the screen, the live parts pile.
-FORM: Hardware-store parts tray, candidate 4 of 7, seed 3a8538a0.
+FIRST VIEWPORT: Paper header with wordmark left and tap-to-call number top right. Navy hero: eyebrow, "Broken in River Edge? Fixed today.", one promise line, two pill buttons (Tell me what's broken, Text Yuri). Under them, filling the rest of the screen, the live parts pile.
+FORM: Hardware-store parts tray, candidate 4 of 7, seed 3a8538a0; calm-photo band system without photos (none supplied).
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#" aria-label="DPG Home Improvement Inc, back to top"><b>DPG</b><span>Home Improvement Inc</span></a>
-    <a class="tel" href="tel:+12013428837"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z"/></svg>(201) 342-8837</a>
+    <a class="tel" href="tel:+12013428837"><svg aria-hidden="true"><use href="#i-phone"/></svg>(201) 342-8837</a>
   </div>
 </header>
 
 <main id="top">
-<section class="hero" aria-labelledby="h1">
+<section class="hero" id="hero" aria-labelledby="h1">
   <div class="wrap hero-copy">
-    <h1 id="h1">Broken today. <em>Fixed today.</em></h1>
-    <p class="promise">I'm <b>Yuri, your local handyman</b> in River Edge, NJ.</p>
+    <span class="eyebrow">Same-day repair</span>
+    <h1 id="h1">Broken in River Edge? <span class="accent">Fixed today.</span></h1>
+    <p class="promise">I'm <b>Yuri, your local handyman.</b></p>
     <div class="actions">
       <a class="btn btn-primary" href="#ask">Tell me what's broken</a>
-      <a class="btn btn-ghost" id="textYuri" href="sms:+12013428837?&amp;body=Hi%20Yuri%2C%20I%20found%20your%20website.%20I%20need%20help%20with%3A%20"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>Text Yuri</a>
+      <a class="btn btn-ghost" id="textYuri" data-sms href="sms:+12013428837?&amp;body=Hi%20Yuri%2C%20I%20found%20your%20website.%20I%20need%20help%20with%3A%20"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text Yuri</a>
     </div>
   </div>
   <div class="tray" data-tray="hero" aria-hidden="true"><canvas></canvas></div>
 </section>
 
-<section class="light" aria-labelledby="h-trust">
+<section class="on-paper" aria-labelledby="h-trust">
   <div class="wrap split">
-    <div>
+    <div class="rise">
       <h2 id="h-trust">I treat your home like mine.</h2>
-      <p class="lede">You're letting me into your house. I show up when I say I will, fix it properly, and stand behind the work.</p>
-      <a class="fb" href="https://facebook.com/profile.php?id=100000069853653" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>
-        See me on Facebook
-        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
+      <p class="lede" style="margin-top:16px">You're letting me into your house. I show up when I say I will, fix it properly, and stand behind the work.</p>
     </div>
     <ul class="claims">
-      <li><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="21" r="14"/><path d="M20 13v8l5 4M15 3h10"/></svg>Same-day repair</li>
-      <li><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4l13 5v9c0 8.5-5.6 15.3-13 18-7.4-2.7-13-9.5-13-18V9z"/><path d="M14 20l4.5 4.5L27 16"/></svg>Fully insured and bonded</li>
-      <li><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="8" width="30" height="27" rx="4"/><path d="M5 16h30M13 4v7M27 4v7"/><path d="M18 22l3-2v10"/></svg>One-year warranty on labor</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="21" r="14"/><path d="M20 13v8l5 4M15 3h10"/></svg>Same-day repair</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4l13 5v9c0 8.5-5.6 15.3-13 18-7.4-2.7-13-9.5-13-18V9z"/><path d="M14 20l4.5 4.5L27 16"/></svg>Fully insured and bonded</li>
+      <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="8" width="30" height="27" rx="4"/><path d="M5 16h30M13 4v7M27 4v7"/><path d="M18 22l3-2v10"/></svg>One-year warranty on labor</li>
     </ul>
+      <a class="fb rise" href="https://facebook.com/profile.php?id=100000069853653" rel="noopener">
+        <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>See me on Facebook</span>
+        <span class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></span>
+      </a>
   </div>
 </section>
 
-<section class="light how" aria-labelledby="h-how">
+<section class="on-deep how" aria-labelledby="h-how">
   <div class="wrap">
-    <h2 id="h-how">How it works</h2>
+    <h2 id="h-how" class="rise">How it <span class="accent">works.</span></h2>
     <ol class="steps">
-      <li><div><b>Text or call me.</b><span>Big job or small, ask me.</span></div></li>
-      <li><div><b>I come and fix it.</b><span>At a fair price.</span></div></li>
-      <li><div><b>You're covered for a year.</b><span>If my work fails, I come back.</span></div></li>
+      <li class="rise"><div><b>Text or call me.</b><span>Big job or small, ask me.</span></div></li>
+      <li class="rise"><div><b>I come and fix it.</b><span>At a fair price.</span></div></li>
+      <li class="rise"><div><b>You're covered for a year.</b><span>If my work fails, I come back.</span></div></li>
     </ol>
   </div>
 </section>
 
-<div class="band flip" data-tray="band" data-fill="#1c4d8c" aria-hidden="true"><canvas></canvas></div>
+<div class="band from-deep" data-tray="band" data-fill="#f4f6fb" aria-hidden="true"><canvas></canvas></div>
 
-<section class="ask" id="ask" aria-labelledby="h-ask">
+<section class="on-paper ask" id="ask" aria-labelledby="h-ask">
   <div class="wrap">
-    <div>
+    <div class="head rise">
+      <span class="eyebrow">Big job or small</span>
       <h2 id="h-ask">Tell me what's broken</h2>
       <p class="lede">Not sure it's something I do? Ask anyway.</p>
     </div>
-    <form id="fixForm" novalidate>
+    <form id="fixForm" class="rise" novalidate>
       <div class="field" id="f-name">
         <label for="name">Your name</label>
         <input type="text" id="name" name="name" autocomplete="name" maxlength="60" placeholder="First name is fine" aria-describedby="e-name">
@@ -285,23 +328,23 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
           <input type="radio" name="when" id="w3" value="Whenever works"><label for="w3">I'm flexible</label>
         </div>
       </fieldset>
-      <button class="btn btn-primary" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>Text this to Yuri</button>
+      <button class="btn btn-primary" type="submit"><svg aria-hidden="true"><use href="#i-chat"/></svg>Text this to Yuri</button>
       <p class="sent" id="sent" role="status" hidden>Didn't open your messages? Call me at <a href="tel:+12013428837">(201) 342-8837</a>.</p>
       <p class="after">Opens your messages with this written out.</p>
     </form>
   </div>
 </section>
 
-<div class="band" data-tray="band" data-fill="#eef2f6" aria-hidden="true"><canvas></canvas></div>
+<div class="band from-paper" data-tray="band" data-fill="#1c4d8c" aria-hidden="true"><canvas></canvas></div>
 
-<section class="close" aria-labelledby="h-close">
+<section class="on-navy close" id="close" aria-labelledby="h-close">
   <div class="wrap">
-    <div>
+    <div class="rise">
       <h2 id="h-close">DPG Home Improvement Inc</h2>
       <p class="who">Yuri, your local handyman.</p>
       <p class="area">Based in River Edge, NJ. Not sure I cover your street? Call and ask.</p>
     </div>
-    <a class="bigtel" href="tel:+12013428837"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z"/></svg>(201) 342-8837</a>
+    <a class="bigtel rise" href="tel:+12013428837"><svg aria-hidden="true"><use href="#i-phone"/></svg>(201) 342-8837</a>
   </div>
 </section>
 </main>
@@ -315,7 +358,21 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   </div>
 </footer>
 
+<a class="float" id="float" data-sms href="sms:+12013428837?&amp;body=Hi%20Yuri%2C%20I%20found%20your%20website.%20I%20need%20help%20with%3A%20" aria-label="Text Yuri"><svg aria-hidden="true"><use href="#i-chat"/></svg></a>
+
 <script>
+/* ===== Config ===== */
+var CONFIG = {
+  HERO: 'tray',  // 'tray' = live parts pile under the headline; 'calm' = plain navy with the line texture
+  FLOAT: true    // the floating text circle; false removes it
+};
+document.documentElement.classList.add('js');
+if (CONFIG.HERO === 'calm') {
+  var heroTray = document.querySelector('.hero .tray');
+  if (heroTray) heroTray.remove();
+  document.getElementById('hero').classList.add('calm');
+}
+
 /* ===== Parts tray: one shared loop for every pile on the page ===== */
 (function(){
   /* --- tunables --- */
@@ -565,6 +622,24 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     // if no messages app opened (desktop, some in-app browsers), say what to do instead
     setTimeout(function(){document.getElementById('sent').hidden=false},900);
   });
+})();
+
+/* ===== Floating text circle: shows after the hero, hides while the form is on screen ===== */
+(function(){
+  var fl=document.getElementById('float');if(!fl)return;
+  if(!CONFIG.FLOAT||!('IntersectionObserver' in window)){fl.remove();return}
+  var pastHero=false,formIn=false;
+  function sync(){fl.classList.toggle('on',pastHero&&!formIn);var on=pastHero&&!formIn;fl.tabIndex=on?0:-1;fl.setAttribute("aria-hidden",on?"false":"true")}
+  new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
+  new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('fixForm'));
+  sync();
+})();
+
+/* ===== Fade-up: everything is visible at rest; only what starts below the first screen rises 12px in ===== */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.remove('below');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+  [].forEach.call(document.querySelectorAll('.rise'),function(el){if(el.getBoundingClientRect().top>innerHeight){el.classList.add('below');io.observe(el)}});
 })();
 </script>
 </body>
