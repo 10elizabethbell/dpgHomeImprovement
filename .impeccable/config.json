@@ -8,24 +8,6 @@
         "value": "6px",
         "createdAt": "2026-10-18T10:03:21.907Z",
         "reason": "model triage: focus-ring corner, browser-surface theming only"
-      },
-      {
-        "rule": "design-system-radius",
-        "value": "22px",
-        "createdAt": "2026-10-18T10:03:21.975Z",
-        "reason": "model triage: static pre-JS stand-in for the parts pile, hidden once the canvas paints"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "#5f6c7c",
-        "createdAt": "2026-10-20T00:04:18.044Z",
-        "reason": "model triage: static pre-JS stand-in for the parts pile (same mound as the 22px curve), hidden once the canvas paints"
-      },
-      {
-        "rule": "design-system-color",
-        "value": "rgba(140,152,166,.55)",
-        "createdAt": "2026-10-20T00:04:18.044Z",
-        "reason": "model triage: static pre-JS stand-in for the parts pile (same mound as the 22px curve), hidden once the canvas paints"
       }
     ]
   }
